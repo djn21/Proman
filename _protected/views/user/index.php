@@ -2,6 +2,7 @@
 use app\helpers\CssHelper;
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\UserSearch */
@@ -11,14 +12,13 @@ $this->title = Yii::t('app', 'Users');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-index">
-
     <h1>
         <?= Html::encode($this->title) ?>
         <span class="pull-right">
             <?= Html::a(Yii::t('app', 'Create User'), ['create'], ['class' => 'btn btn-success']) ?>
         </span>         
     </h1>
-
+    <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -76,5 +76,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ], // columns
 
     ]); ?>
+    <?php Pjax::end(); ?>
 
 </div>

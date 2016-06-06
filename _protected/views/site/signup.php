@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-signup">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+        <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="col-md-5 well bs-component">
 
@@ -40,6 +40,5 @@ $this->params['breadcrumbs'][] = $this->title;
                 <i>*<?= Yii::t('app', 'We will send you an email with account activation link.') ?></i>
             </div>
         <?php endif ?>
-
     </div>
 </div>

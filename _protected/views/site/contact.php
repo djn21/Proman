@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
+use yii\bootstrap\Modal;
 
 $this->title = Yii::t('app', 'Contact');
 $this->params['breadcrumbs'][] = $this->title;
@@ -16,10 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="col-md-5 well bs-component">
 
-        <p>
-            <?= Yii::t('app', 'If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.'); ?>
-        </p>
-
         <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
             <?= $form->field($model, 'name')->textInput(
@@ -29,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?= $form->field($model, 'subject')->textInput(['placeholder' => Yii::t('app', 'Enter the subject')]) ?>
 
-            <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
+            <?= $form->field($model, 'body')->textArea(['rows' => 2]) ?>
 
             <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
                 'template' => 
