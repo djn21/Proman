@@ -45,10 +45,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'note')->textInput(['maxlength' => true, 'placeholder' => 'Note']) ?>
 
-    <div class="form-group" id="add-expences"></div>
-
-    <div class="form-group" id="add-income"></div>
-
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
         <?= Html::a(Yii::t('app', 'Cancel'),['index'],['class'=> 'btn btn-danger']) ?>

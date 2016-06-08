@@ -7,6 +7,8 @@
 	use yii\helpers\Html;
 	use yii\widgets\Breadcrumbs;
 	use yii\controllers\SiteController;
+	use app\controllers\MessageController;
+	use app\controllers\UserDetailController;
 
 	AppAsset::register($this);
 ?>
@@ -42,13 +44,49 @@
 						<ul class="nav navbar-nav">
 					  		<!-- Messages: style can be found in dropdown.less-->
 					  		<?php
+					  			$baseUrl=Yii::$app->request->BaseUrl;
+					  			$user=UserDetailController::userById(Yii::$app->user->id);
+					  			$userName=$user['first_name'] . " " . $user['last_name'];
+					  			$userId=$user['id'];
+					  			$newMessages=MessageController::newMessages($userId);
+					  			$numberOfNewMessages=count($newMessages);
 					  			if(!Yii::$app->user->isGuest){
 					  				echo
-							  		"<li>
-										<a href='#''>
+							  		"<li class='dropdown messages-menu'>
+										<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
 								  			<i class='fa fa-envelope-o'></i>
-								  			<span class='label label-success'>4</span>
+								  			<span class='label label-success'>$numberOfNewMessages</span>
 										</a>
+										<ul class='dropdown-menu'>
+              								<li class='header'>You have $numberOfNewMessages new messages</li>
+              								<li>
+	                							<ul class='menu'>";
+	                								foreach ($newMessages as $message) {
+	                									$messageSubject=$message['subject'];
+	                									$messageTime=$message['time'];
+	                									$messageSenderId=$message['id_from'];
+	                									$messageSender=UserDetailController::userById($messageSenderId);
+	                									$senderUserName=$messageSender['first_name'] . " " . $messageSender['last_name'];
+	                									$senderUserImage=$baseUrl . $messageSender['image'];
+		                								echo"
+								                  		<li>
+								                    		<a href='#'>
+								                      			<div class='pull-left'>
+								                        			<img src=$senderUserImage class='img-circle' alt='User Image'>
+								                      			</div>
+								                      			<h4>
+								                        			$senderUserName
+								                        			<small><i class='fa fa-clock-o'></i> $messageTime</small>
+								                      			</h4>
+								                      			<p>$messageSubject</p>
+								                    		</a>
+								                  		</li>";
+								                  	}
+							                  	echo"
+							                	</ul>
+						                	</li>
+						                	<li class='footer' style='padding: 0px; height: 30px;'><a href='#''>See All Messages</a></li>
+						                </ul>
 					 				</li>
 				  					<li class='dropdown notifications-menu'>
 										<a href='#''>
@@ -64,16 +102,17 @@
 									</li>";
 								}
 							?>
+
 		  					<!-- User Account: style can be found in dropdown.less -->
       						<?php
-      							$baseUrl=Yii::$app->request->BaseUrl;
       							$name="Guest";
       							if(!Yii::$app->user->isGuest){
-      								$name="Dejan Đekanović";
+      								$name=$userName;
+      								$userImageUrl=$baseUrl . $user['image'];
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
-      										<img src='$baseUrl/dist/img/avatar5.png' class='user-image' alt='User Image'>
+      										<img src=$userImageUrl class='user-image' alt='User Image'>
       										<span class='hidden-xs'>" . $name . "</span>
   						 				</a>";
       							}else{
@@ -89,11 +128,17 @@
             					<ul class="dropdown-menu">
               						<!-- User image -->
               						<li class="user-header">
-                						<img src="<?= $baseUrl ?>/dist/img/avatar5.png" class="img-circle" alt="User Image">
+              							<?php
+              								if(!Yii::$app->user->isGuest){
+                								echo "<img src=$userImageUrl class='img-circle' alt='User Image'>";
+                							}else{
+                								echo "<img src='$baseUrl/dist/img/avatar5.png' class='user-image' alt='User Image'>";
+                							}
+            							?>
                 						<p>
                 							<?php
                 								if(!Yii::$app->user->isGuest){
-                 									echo $name . " - Software Developer";
+                 									echo $name . " - " . $user['role'];
                  								}
              								?>
                 						</p>
@@ -129,7 +174,7 @@
 									echo 
 									"<div class='user-panel'>
  										<div class='pull-left image'>
-	  										<img src='$baseUrl/dist/img/avatar5.png' class='img-circle' alt='User Image'>
+	  										<img src='$userImageUrl' class='img-circle' alt='User Image'>
 										</div>
 										<div class='pull-left info'>
 											<p>" . $name . "</p>
@@ -185,7 +230,7 @@
 								<li>
 							  		<a href='#'>
 										<i class='fa fa-envelope'></i> <span>Mails</span>
-										<small class='label pull-right bg-green'>4</small>
+										<small class='label pull-right bg-green'>$numberOfNewMessages</small>
 							  		</a>
 								</li>";
 							}
