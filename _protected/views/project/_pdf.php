@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'name',
         'start_date',
         'end_date',
-        'status',
         'dead_line',
-        'note',
+        'status',
+        'note:ntext',
     ];
     echo DetailView::widget([
         'model' => $model,
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="row">
 <?php
-    $gridColumnExpences = [
+    $gridColumnExpence = [
         ['class' => 'yii\grid\SerialColumn'],
         ['attribute' => 'id', 'hidden' => true],
         'description',
@@ -51,14 +51,14 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ];
     echo Gridview::widget([
-        'dataProvider' => $providerExpences,
+        'dataProvider' => $providerExpence,
         'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-expences']],
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-expence']],
         'panel' => [
             'type' => GridView::TYPE_PRIMARY,
-            'heading' => Html::encode('Expences'.' '. $this->title),
+            'heading' => Html::encode('Expence'.' '. $this->title),
         ],
-        'columns' => $gridColumnExpences
+        'columns' => $gridColumnExpence
     ]);
 ?>
     </div>
@@ -85,6 +85,62 @@ $this->params['breadcrumbs'][] = $this->title;
             'heading' => Html::encode('Income'.' '. $this->title),
         ],
         'columns' => $gridColumnIncome
+    ]);
+?>
+    </div>
+    
+    <div class="row">
+<?php
+    $gridColumnProjectUser = [
+        ['class' => 'yii\grid\SerialColumn'],
+        [
+                'attribute' => 'project.name',
+                'label' => 'Project'
+        ],
+        [
+                'attribute' => 'userDetail.id',
+                'label' => 'User'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerProjectUser,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-user']],
+        'panel' => [
+            'type' => GridView::TYPE_PRIMARY,
+            'heading' => Html::encode('Project User'.' '. $this->title),
+        ],
+        'columns' => $gridColumnProjectUser
+    ]);
+?>
+    </div>
+    
+    <div class="row">
+<?php
+    $gridColumnTask = [
+        ['class' => 'yii\grid\SerialColumn'],
+        ['attribute' => 'id', 'hidden' => true],
+        'name',
+        'start_date',
+        'end_date',
+        'dead_line',
+        'man_hours',
+        'percentage',
+        'note:ntext',
+        [
+                'attribute' => 'project.name',
+                'label' => 'Project'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerTask,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-task']],
+        'panel' => [
+            'type' => GridView::TYPE_PRIMARY,
+            'heading' => Html::encode('Task'.' '. $this->title),
+        ],
+        'columns' => $gridColumnTask
     ]);
 ?>
     </div>

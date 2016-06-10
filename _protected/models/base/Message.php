@@ -16,8 +16,8 @@ use mootensai\behaviors\UUIDBehavior;
  * @property integer $id_from
  * @property integer $id_to
  *
- * @property \app\models\UserDetail $idTo
  * @property \app\models\UserDetail $idFrom
+ * @property \app\models\UserDetail $idTo
  */
 class Message extends \yii\db\ActiveRecord
 {
@@ -30,10 +30,11 @@ class Message extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['subject', 'content', 'time', 'readed', 'id_from', 'id_to'], 'required'],
+            [['subject', 'content', 'id_from', 'id_to'], 'required'],
             [['content'], 'string'],
+            [['time'], 'safe'],
             [['readed', 'id_from', 'id_to'], 'integer'],
-            [['subject', 'time'], 'string', 'max' => 255]
+            [['subject'], 'string', 'max' => 255]
         ];
     }
     
@@ -64,17 +65,17 @@ class Message extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIdTo()
+    public function getIdFrom()
     {
-        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_to']);
+        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_from']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIdFrom()
+    public function getIdTo()
     {
-        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_from']);
+        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_to']);
     }
 
 /**

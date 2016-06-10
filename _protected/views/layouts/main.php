@@ -45,11 +45,14 @@
 					  		<!-- Messages: style can be found in dropdown.less-->
 					  		<?php
 					  			$baseUrl=Yii::$app->request->BaseUrl;
-					  			$user=UserDetailController::userById(Yii::$app->user->id);
-					  			$userName=$user['first_name'] . " " . $user['last_name'];
-					  			$userId=$user['id'];
-					  			$newMessages=MessageController::newMessages($userId);
-					  			$numberOfNewMessages=count($newMessages);
+					  			//$user=UserDetailController::userById(Yii::$app->user->id);
+					  			//$userName=$user['first_name'] . " " . $user['last_name'];
+					  			$userName="Dejan Đekanović";
+					  			//$userId=$user['id'];
+					  			$userId=1;
+					  			//$newMessages=MessageController::newMessages($userId);
+					  			//$numberOfNewMessages=count($newMessages);
+					  			$numberOfNewMessages=4;
 					  			if(!Yii::$app->user->isGuest){
 					  				echo
 							  		"<li class='dropdown messages-menu'>
@@ -61,7 +64,7 @@
               								<li class='header'>You have $numberOfNewMessages new messages</li>
               								<li>
 	                							<ul class='menu'>";
-	                								foreach ($newMessages as $message) {
+	                								/*foreach ($newMessages as $message) {
 	                									$messageSubject=$message['subject'];
 	                									$messageTime=$message['time'];
 	                									$messageSenderId=$message['id_from'];
@@ -81,7 +84,7 @@
 								                      			<p>$messageSubject</p>
 								                    		</a>
 								                  		</li>";
-								                  	}
+								                  	}*/
 							                  	echo"
 							                	</ul>
 						                	</li>
@@ -108,7 +111,8 @@
       							$name="Guest";
       							if(!Yii::$app->user->isGuest){
       								$name=$userName;
-      								$userImageUrl=$baseUrl . $user['image'];
+      								//$userImageUrl=$baseUrl . $user['image'];
+      								$userImageUrl=$baseUrl . "/dist/img/avatar5.png";
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
@@ -138,7 +142,8 @@
                 						<p>
                 							<?php
                 								if(!Yii::$app->user->isGuest){
-                 									echo $name . " - " . $user['role'];
+                 									//echo $name . " - " . $user['role'];
+                 									echo $name . " - Software Developer";
                  								}
              								?>
                 						</p>
@@ -207,7 +212,7 @@
 							}
 						?>
 						<li>
-		  					<a href="/~dejand/proman/">
+		  					<a href="<?= $baseUrl ?>">
 								<i class="fa fa-home"></i>
 								<span>Home</span>
 		  					</a>
@@ -216,20 +221,26 @@
 							if(Yii::$app->user->can('employee')){
 								echo
 								"<li>
-						  			<a href='$baseUrl\project\index'>
+						  			<a href='$baseUrl/project/index'>
 										<i class='fa fa-cubes'></i> <span>Projects</span>
 										<small class='label pull-right bg-blue'>6</small>
 						  			</a>
 								</li>
 								<li>
-						  			<a href='#'>
+						  			<a href='$baseUrl/task/index'>
 										<i class='fa fa-tasks'></i> <span>Tasks</span>
-										<small class='label pull-right bg-red'>9</small>
+										<small class='label pull-right bg-yellow'>9</small>
+						  			</a>
+								</li>
+								<li>
+						  			<a href='$baseUrl/activity/index'>
+										<i class='fa fa-check-square'></i> <span>Activities</span>
+										<small class='label pull-right bg-red'>7</small>
 						  			</a>
 								</li>
 								<li>
 							  		<a href='#'>
-										<i class='fa fa-envelope'></i> <span>Mails</span>
+										<i class='fa fa-envelope'></i> <span>Messages</span>
 										<small class='label pull-right bg-green'>$numberOfNewMessages</small>
 							  		</a>
 								</li>";

@@ -1890,12 +1890,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mootensai/yii2-enhanced-gii.git",
-                "reference": "906a4b495d5061adf9c92667cfc9d0f5df6acd2a"
+                "reference": "24392b185787727bcc459fbab96de0b7b0950aba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mootensai/yii2-enhanced-gii/zipball/906a4b495d5061adf9c92667cfc9d0f5df6acd2a",
-                "reference": "906a4b495d5061adf9c92667cfc9d0f5df6acd2a",
+                "url": "https://api.github.com/repos/mootensai/yii2-enhanced-gii/zipball/24392b185787727bcc459fbab96de0b7b0950aba",
+                "reference": "24392b185787727bcc459fbab96de0b7b0950aba",
                 "shasum": ""
             },
             "require": {
@@ -1942,7 +1942,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2016-05-25 03:43:59"
+            "time": "2016-06-09 05:10:14"
         },
         {
             "name": "mootensai/yii2-jsblock",

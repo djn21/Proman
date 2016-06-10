@@ -8,7 +8,6 @@ use app\models\ProjectSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
 
 /**
  * ProjectController implements the CRUD actions for Project model.
@@ -18,22 +17,25 @@ class ProjectController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['index','create','view','update','delete','pdf'],
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
             ],
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-expence', 'add-income', 'add-project-user', 'add-task'],
+                        'roles' => ['@']
+                    ],
+                    [
+                        'allow' => false
+                    ]
+                ]
+            ]
         ];
     }
 
@@ -60,16 +62,24 @@ class ProjectController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerExpences = new \yii\data\ArrayDataProvider([
+        $providerExpence = new \yii\data\ArrayDataProvider([
             'allModels' => $model->expences,
         ]);
         $providerIncome = new \yii\data\ArrayDataProvider([
             'allModels' => $model->incomes,
         ]);
+        $providerProjectUser = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectUsers,
+        ]);
+        $providerTask = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->tasks,
+        ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'providerExpences' => $providerExpences,
+            'providerExpence' => $providerExpence,
             'providerIncome' => $providerIncome,
+            'providerProjectUser' => $providerProjectUser,
+            'providerTask' => $providerTask,
         ]);
     }
 
@@ -132,17 +142,25 @@ class ProjectController extends Controller
      */
     public function actionPdf($id) {
         $model = $this->findModel($id);
-        $providerExpences = new \yii\data\ArrayDataProvider([
+        $providerExpence = new \yii\data\ArrayDataProvider([
             'allModels' => $model->expences,
         ]);
         $providerIncome = new \yii\data\ArrayDataProvider([
             'allModels' => $model->incomes,
         ]);
+        $providerProjectUser = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectUsers,
+        ]);
+        $providerTask = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->tasks,
+        ]);
 
         $content = $this->renderAjax('_pdf', [
             'model' => $model,
-            'providerExpences' => $providerExpences,
+            'providerExpence' => $providerExpence,
             'providerIncome' => $providerIncome,
+            'providerProjectUser' => $providerProjectUser,
+            'providerTask' => $providerTask,
         ]);
 
         $pdf = new \kartik\mpdf\Pdf([
@@ -181,19 +199,19 @@ class ProjectController extends Controller
     
     /**
     * Action to load a tabular form grid
-    * for Expences
+    * for Expence
     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
     *
     * @return mixed
     */
-    public function actionAddExpences()
+    public function actionAddExpence()
     {
         if (Yii::$app->request->isAjax) {
-            $row = Yii::$app->request->post('Expences');
+            $row = Yii::$app->request->post('Expence');
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
                 $row[] = [];
-            return $this->renderAjax('_formExpences', ['row' => $row]);
+            return $this->renderAjax('_formExpence', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
@@ -214,6 +232,46 @@ class ProjectController extends Controller
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
                 $row[] = [];
             return $this->renderAjax('_formIncome', ['row' => $row]);
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
+    * Action to load a tabular form grid
+    * for ProjectUser
+    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+    *
+    * @return mixed
+    */
+    public function actionAddProjectUser()
+    {
+        if (Yii::$app->request->isAjax) {
+            $row = Yii::$app->request->post('ProjectUser');
+            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
+                $row[] = [];
+            return $this->renderAjax('_formProjectUser', ['row' => $row]);
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
+    * Action to load a tabular form grid
+    * for Task
+    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+    *
+    * @return mixed
+    */
+    public function actionAddTask()
+    {
+        if (Yii::$app->request->isAjax) {
+            $row = Yii::$app->request->post('Task');
+            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
+                $row[] = [];
+            return $this->renderAjax('_formTask', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

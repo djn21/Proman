@@ -23,9 +23,9 @@ use kartik\grid\GridView;
         'name',
         'start_date',
         'end_date',
-        'status',
         'dead_line',
-        'note',
+        'status',
+        'note:ntext',
     ];
     echo DetailView::widget([
         'model' => $model,

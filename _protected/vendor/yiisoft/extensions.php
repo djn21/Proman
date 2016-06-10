@@ -30,15 +30,6 @@ return array (
       '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
     ),
   ),
-  'kartik-v/yii2-password' => 
-  array (
-    'name' => 'kartik-v/yii2-password',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@kartik/password' => $vendorDir . '/kartik-v/yii2-password',
-    ),
-  ),
   'yiisoft/yii2-codeception' => 
   array (
     'name' => 'yiisoft/yii2-codeception',
@@ -327,5 +318,14 @@ return array (
       '@mootensai/enhancedgii' => $vendorDir . '/mootensai/yii2-enhanced-gii',
     ),
     'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
+  ),
+  'kartik-v/yii2-password' => 
+  array (
+    'name' => 'kartik-v/yii2-password',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/password' => $vendorDir . '/kartik-v/yii2-password',
+    ),
   ),
 );

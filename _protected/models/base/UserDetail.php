@@ -15,10 +15,9 @@ use mootensai\behaviors\UUIDBehavior;
  * @property string $role
  * @property string $note
  * @property string $image
- * @property integer $user_id
  *
  * @property \app\models\Message[] $messages
- * @property \app\models\User $user
+ * @property \app\models\User $id0
  */
 class UserDetail extends \yii\db\ActiveRecord
 {
@@ -31,9 +30,10 @@ class UserDetail extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['first_name', 'last_name', 'phone', 'role', 'note', 'image', 'user_id'], 'required'],
-            [['user_id'], 'integer'],
-            [['first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'string', 'max' => 255]
+            [['id', 'first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'required'],
+            [['id'], 'integer'],
+            [['note'], 'string'],
+            [['first_name', 'last_name', 'phone', 'role', 'image'], 'string', 'max' => 255]
         ];
     }
     
@@ -58,7 +58,6 @@ class UserDetail extends \yii\db\ActiveRecord
             'role' => 'Role',
             'note' => 'Note',
             'image' => 'Image',
-            'user_id' => 'User ID',
         ];
     }
 
@@ -73,9 +72,9 @@ class UserDetail extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUser()
+    public function getId0()
     {
-        return $this->hasOne(\app\models\User::className(), ['id' => 'user_id']);
+        return $this->hasOne(\app\models\User::className(), ['id' => 'id']);
     }
 
 /**

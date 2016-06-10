@@ -18,8 +18,8 @@ use app\models\Project;
     public function rules()
     {
         return [
-            [['id', 'created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'integer'],
-            [['name', 'start_date', 'end_date', 'status', 'dead_line', 'note'], 'safe'],
+            [['id'], 'integer'],
+            [['name', 'start_date', 'end_date', 'dead_line', 'status', 'note'], 'safe'],
         ];
     }
 
@@ -57,18 +57,13 @@ use app\models\Project;
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'created_at' => $this->created_at,
-            'created_by' => $this->created_by,
-            'updated_at' => $this->updated_at,
-            'updated_by' => $this->updated_by,
-            'lock' => $this->lock,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
+            'dead_line' => $this->dead_line,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'start_date', $this->start_date])
-            ->andFilterWhere(['like', 'end_date', $this->end_date])
             ->andFilterWhere(['like', 'status', $this->status])
-            ->andFilterWhere(['like', 'dead_line', $this->dead_line])
             ->andFilterWhere(['like', 'note', $this->note]);
 
         return $dataProvider;

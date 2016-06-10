@@ -3,8 +3,6 @@
 namespace app\models\base;
 
 use Yii;
-use yii\behaviors\TimestampBehavior;
-use yii\behaviors\BlameableBehavior;
 use mootensai\behaviors\UUIDBehavior;
 
 /**
@@ -15,11 +13,6 @@ use mootensai\behaviors\UUIDBehavior;
  * @property string $amount
  * @property string $date
  * @property integer $project_id
- * @property integer $created_at
- * @property integer $created_by
- * @property integer $updated_at
- * @property integer $updated_by
- * @property integer $lock
  *
  * @property \app\models\Project $project
  */
@@ -34,13 +27,11 @@ class Income extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'amount', 'date', 'project_id', 'created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'required'],
+            [['description', 'amount', 'date', 'project_id'], 'required'],
             [['amount'], 'number'],
             [['date'], 'safe'],
-            [['project_id', 'created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'integer'],
-            [['description'], 'string', 'max' => 255],
-            [['lock'], 'default', 'value' => '0'],
-            [['lock'], 'mootensai\components\OptimisticLockValidator']
+            [['project_id'], 'integer'],
+            [['description'], 'string', 'max' => 255]
         ];
     }
     
@@ -50,17 +41,6 @@ class Income extends \yii\db\ActiveRecord
     public static function tableName()
     {
         return '{{%income}}';
-    }
-
-    /**
-     * 
-     * @return string
-     * overwrite function optimisticLock
-     * return string name of field are used to stored optimistic lock 
-     * 
-     */
-    public function optimisticLock() {
-        return 'lock';
     }
 
     /**
@@ -74,7 +54,6 @@ class Income extends \yii\db\ActiveRecord
             'amount' => 'Amount',
             'date' => 'Date',
             'project_id' => 'Project ID',
-            'lock' => 'Lock',
         ];
     }
 
@@ -93,17 +72,6 @@ class Income extends \yii\db\ActiveRecord
     public function behaviors()
     {
         return [
-            'timestamp' => [
-                'class' => TimestampBehavior::className(),
-                'createdAtAttribute' => 'created_at',
-                'updatedAtAttribute' => 'updated_at',
-                'value' => new \yii\db\Expression('NOW()'),
-            ],
-            'blameable' => [
-                'class' => BlameableBehavior::className(),
-                'createdByAttribute' => 'created_by',
-                'updatedByAttribute' => 'updated_by',
-            ],
             'uuid' => [
                 'class' => UUIDBehavior::className(),
                 'column' => 'id',

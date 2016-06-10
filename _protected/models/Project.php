@@ -17,12 +17,10 @@ class Project extends BaseProject
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['name', 'start_date', 'end_date', 'status', 'dead_line', 'note', 'created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'required'],
+            [['name', 'start_date', 'end_date', 'dead_line', 'status', 'note'], 'required'],
             [['start_date', 'end_date', 'dead_line'], 'safe'],
-            [['created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'integer'],
-            [['name', 'status', 'note'], 'string', 'max' => 255],
-            [['lock'], 'default', 'value' => '0'],
-            [['lock'], 'mootensai\components\OptimisticLockValidator']
+            [['note'], 'string'],
+            [['name', 'status'], 'string', 'max' => 255]
         ]);
     }
 	

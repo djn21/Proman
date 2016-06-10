@@ -1,0 +1,6 @@
+{
+    "require": {
+        "kartik-v/yii2-slider": "dev-master",
+        "mootensai/yii2-enhanced-gii": "@dev"
+    }
+}

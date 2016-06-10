@@ -3,8 +3,6 @@
 namespace app\models\base;
 
 use Yii;
-use yii\behaviors\TimestampBehavior;
-use yii\behaviors\BlameableBehavior;
 use mootensai\behaviors\UUIDBehavior;
 
 /**
@@ -14,17 +12,15 @@ use mootensai\behaviors\UUIDBehavior;
  * @property string $name
  * @property string $start_date
  * @property string $end_date
- * @property string $status
  * @property string $dead_line
+ * @property string $status
  * @property string $note
- * @property integer $created_at
- * @property integer $created_by
- * @property integer $updated_at
- * @property integer $updated_by
- * @property integer $lock
  *
- * @property \app\models\Expences[] $expences
+ * @property \app\models\Expence[] $expences
  * @property \app\models\Income[] $incomes
+ * @property \app\models\ProjectUser[] $projectUsers
+ * @property \app\models\UserDetail[] $users
+ * @property \app\models\Task[] $tasks
  */
 class Project extends \yii\db\ActiveRecord
 {
@@ -37,12 +33,10 @@ class Project extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'start_date', 'end_date', 'status', 'dead_line', 'note', 'created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'required'],
+            [['name', 'start_date', 'end_date', 'dead_line', 'status', 'note'], 'required'],
             [['start_date', 'end_date', 'dead_line'], 'safe'],
-            [['created_at', 'created_by', 'updated_at', 'updated_by', 'lock'], 'integer'],
-            [['name', 'status', 'note'], 'string', 'max' => 255],
-            [['lock'], 'default', 'value' => '0'],
-            [['lock'], 'mootensai\components\OptimisticLockValidator']
+            [['note'], 'string'],
+            [['name', 'status'], 'string', 'max' => 255]
         ];
     }
     
@@ -55,17 +49,6 @@ class Project extends \yii\db\ActiveRecord
     }
 
     /**
-     * 
-     * @return string
-     * overwrite function optimisticLock
-     * return string name of field are used to stored optimistic lock 
-     * 
-     */
-    public function optimisticLock() {
-        return 'lock';
-    }
-
-    /**
      * @inheritdoc
      */
     public function attributeLabels()
@@ -75,10 +58,9 @@ class Project extends \yii\db\ActiveRecord
             'name' => 'Name',
             'start_date' => 'Start Date',
             'end_date' => 'End Date',
-            'status' => 'Status',
             'dead_line' => 'Dead Line',
+            'status' => 'Status',
             'note' => 'Note',
-            'lock' => 'Lock',
         ];
     }
 
@@ -87,7 +69,7 @@ class Project extends \yii\db\ActiveRecord
      */
     public function getExpences()
     {
-        return $this->hasMany(\app\models\Expences::className(), ['project_id' => 'id']);
+        return $this->hasMany(\app\models\Expence::className(), ['project_id' => 'id']);
     }
 
     /**
@@ -98,6 +80,30 @@ class Project extends \yii\db\ActiveRecord
         return $this->hasMany(\app\models\Income::className(), ['project_id' => 'id']);
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProjectUsers()
+    {
+        return $this->hasMany(\app\models\ProjectUser::className(), ['project_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUsers()
+    {
+        return $this->hasMany(\app\models\UserDetail::className(), ['id' => 'user_id'])->viaTable('{{%project_user}}', ['project_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTasks()
+    {
+        return $this->hasMany(\app\models\Task::className(), ['project_id' => 'id']);
+    }
+
 /**
      * @inheritdoc
      * @return type mixed
@@ -105,17 +111,6 @@ class Project extends \yii\db\ActiveRecord
     public function behaviors()
     {
         return [
-            'timestamp' => [
-                'class' => TimestampBehavior::className(),
-                'createdAtAttribute' => 'created_at',
-                'updatedAtAttribute' => 'updated_at',
-                'value' => new \yii\db\Expression('NOW()'),
-            ],
-            'blameable' => [
-                'class' => BlameableBehavior::className(),
-                'createdByAttribute' => 'created_by',
-                'updatedByAttribute' => 'updated_by',
-            ],
             'uuid' => [
                 'class' => UUIDBehavior::className(),
                 'column' => 'id',

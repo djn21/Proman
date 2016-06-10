@@ -17,10 +17,11 @@ class Message extends BaseMessage
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['subject', 'content', 'time', 'readed', 'id_from', 'id_to'], 'required'],
+            [['subject', 'content', 'id_from', 'id_to'], 'required'],
             [['content'], 'string'],
+            [['time'], 'safe'],
             [['readed', 'id_from', 'id_to'], 'integer'],
-            [['subject', 'time'], 'string', 'max' => 255]
+            [['subject'], 'string', 'max' => 255]
         ]);
     }
 	

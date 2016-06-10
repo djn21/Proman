@@ -19,15 +19,42 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 
-    <?= $form->field($model, 'start_date')->textInput(['maxlength' => true, 'placeholder' => 'Start Date']) ?>
+    <?= $form->field($model, 'start_date')->widget(\kartik\widgets\DatePicker::classname(), [
+        'options' => ['placeholder' => 'Choose Start Date'],
+        'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
+        'pluginOptions' => [
+            'autoclose' => true,
+            'format' => 'dd-M-yyyy'
+        ]
+    ]); ?>
 
-    <?= $form->field($model, 'end_date')->textInput(['maxlength' => true, 'placeholder' => 'End Date']) ?>
+    <?= $form->field($model, 'end_date')->widget(\kartik\widgets\DatePicker::classname(), [
+        'options' => ['placeholder' => 'Choose End Date'],
+        'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
+        'pluginOptions' => [
+            'autoclose' => true,
+            'format' => 'dd-M-yyyy'
+        ]
+    ]); ?>
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => true, 'placeholder' => 'Status']) ?>
+    <?= $form->field($model, 'dead_line')->widget(\kartik\widgets\DatePicker::classname(), [
+        'options' => ['placeholder' => 'Choose Dead Line'],
+        'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
+        'pluginOptions' => [
+            'autoclose' => true,
+            'format' => 'dd-M-yyyy'
+        ]
+    ]); ?>
 
-    <?php /* echo $form->field($model, 'dead_line')->textInput(['maxlength' => true, 'placeholder' => 'Dead Line']) */ ?>
+    <?= $form->field($model, 'status')->widget(\kartik\widgets\Select2::classname(), [
+        'data' => $status = array("Active" => "Active", "Inactive" => "Inactive"),
+        'options' => ['placeholder' => 'Chose status'],
+        'pluginOptions' => [
+            'allowClear' => true
+        ],
+    ]) ?>
 
-    <?php /* echo $form->field($model, 'note')->textInput(['maxlength' => true, 'placeholder' => 'Note']) */ ?>
+    <?php /* echo $form->field($model, 'note')->textarea(['rows' => 6]) */ ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -46,9 +46,9 @@ $this->registerJs($search);
         'name',
         'start_date',
         'end_date',
-        'status',
         'dead_line',
-        'note',
+        'status',
+        'note:ntext',
         [
             'class' => 'yii\grid\ActionColumn',
         ],
