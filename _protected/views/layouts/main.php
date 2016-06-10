@@ -45,11 +45,8 @@
 					  		<!-- Messages: style can be found in dropdown.less-->
 					  		<?php
 					  			$baseUrl=Yii::$app->request->BaseUrl;
-					  			//$user=UserDetailController::userById(Yii::$app->user->id);
-					  			//$userName=$user['first_name'] . " " . $user['last_name'];
-					  			$userName="Dejan Đekanović";
-					  			//$userId=$user['id'];
-					  			$userId=1;
+					  			$user=UserDetailController::userById(99600);
+					  			$userName=$user['first_name'] . " " . $user['last_name'];
 					  			//$newMessages=MessageController::newMessages($userId);
 					  			//$numberOfNewMessages=count($newMessages);
 					  			$numberOfNewMessages=4;
@@ -111,8 +108,7 @@
       							$name="Guest";
       							if(!Yii::$app->user->isGuest){
       								$name=$userName;
-      								//$userImageUrl=$baseUrl . $user['image'];
-      								$userImageUrl=$baseUrl . "/dist/img/avatar5.png";
+      								$userImageUrl=$baseUrl . "/" . $user['image'];
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
@@ -123,7 +119,7 @@
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='$baseUrl/login'>
-    										<img src='$baseUrl/dist/img/avatar5.png' class='user-image' alt='User Image'>
+    										<img src='$baseUrl/uploads/0.png' class='user-image' alt='User Image'>
       										<span class='hidden-xs'>" . $name . "</span>
   						 				</a>
   						 			</li>";
@@ -136,7 +132,7 @@
               								if(!Yii::$app->user->isGuest){
                 								echo "<img src=$userImageUrl class='img-circle' alt='User Image'>";
                 							}else{
-                								echo "<img src='$baseUrl/dist/img/avatar5.png' class='user-image' alt='User Image'>";
+                								echo "<img src='$baseUrl/uploads/0.png' class='user-image' alt='User Image'>";
                 							}
             							?>
                 						<p>

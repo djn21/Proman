@@ -15,9 +15,6 @@ use mootensai\behaviors\UUIDBehavior;
  * @property integer $readed
  * @property integer $id_from
  * @property integer $id_to
- *
- * @property \app\models\UserDetail $idFrom
- * @property \app\models\UserDetail $idTo
  */
 class Message extends \yii\db\ActiveRecord
 {
@@ -60,22 +57,6 @@ class Message extends \yii\db\ActiveRecord
             'id_from' => 'Id From',
             'id_to' => 'Id To',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdFrom()
-    {
-        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_from']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdTo()
-    {
-        return $this->hasOne(\app\models\UserDetail::className(), ['id' => 'id_to']);
     }
 
 /**

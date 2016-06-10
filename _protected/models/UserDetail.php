@@ -17,8 +17,7 @@ class UserDetail extends BaseUserDetail
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['id', 'first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'required'],
-            [['id'], 'integer'],
+            [['first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'required'],
             [['note'], 'string'],
             [['first_name', 'last_name', 'phone', 'role', 'image'], 'string', 'max' => 255]
         ]);

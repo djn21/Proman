@@ -15,14 +15,13 @@ use mootensai\behaviors\UUIDBehavior;
  * @property string $role
  * @property string $note
  * @property string $image
- *
- * @property \app\models\Message[] $messages
- * @property \app\models\User $id0
  */
 class UserDetail extends \yii\db\ActiveRecord
 {
 
     use \mootensai\relation\RelationTrait;
+
+    public $file;
 
     /**
      * @inheritdoc
@@ -30,9 +29,9 @@ class UserDetail extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'required'],
-            [['id'], 'integer'],
+            [['first_name', 'last_name', 'phone', 'role', 'file', 'note', 'image'], 'required'],
             [['note'], 'string'],
+            [['file'], 'file'],
             [['first_name', 'last_name', 'phone', 'role', 'image'], 'string', 'max' => 255]
         ];
     }
@@ -58,23 +57,8 @@ class UserDetail extends \yii\db\ActiveRecord
             'role' => 'Role',
             'note' => 'Note',
             'image' => 'Image',
+            'file' => 'Image',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMessages()
-    {
-        return $this->hasMany(\app\models\Message::className(), ['id_from' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getId0()
-    {
-        return $this->hasOne(\app\models\User::className(), ['id' => 'id']);
     }
 
 /**
