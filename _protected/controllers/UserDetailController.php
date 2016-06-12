@@ -78,16 +78,15 @@ class UserDetailController extends Controller
         $model = new UserDetail();
 
         if ($model->loadAll(Yii::$app->request->post())) {
-
-            //upload file
-            $imageName=Yii::$app->user->identity->id;
+            //user id
+            $model->user_id=Yii::$app->user->id;
+            //image name
+            $imageName=$model->user_id;
+            //upload image
             $model->file=UploadedFile::getInstance($model, 'file');
             $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
-
-            //save path
+            //image path
             $model->image='uploads/' . $imageName . '.' . $model->file->extension;
-
-            $model->id=3;
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -107,7 +106,16 @@ class UserDetailController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->loadAll(Yii::$app->request->post(), ['']) && $model->saveAll([''])) {
+        if ($model->loadAll(Yii::$app->request->post(), [''])) {
+            //image name
+            $imageName=$model->user_id;
+            //upload image
+            if($model->file=UploadedFile::getInstance($model, 'file')!=null){
+                $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+                //image path
+                $model->image='uploads/' . $imageName . '.' . $model->file->extension;
+            }
+            $model->saveAll(['']);
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -126,7 +134,7 @@ class UserDetailController extends Controller
     {
         $this->findModel($id)->deleteWithRelated();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['create']);
     }
     
     /**
@@ -177,8 +185,8 @@ class UserDetailController extends Controller
         }
     }
 
-    public function userById($id){
-        return UserDetail::find()->where(['id'=>$id])->one();
+    public function userDetailByUserId($id){
+        return UserDetail::find()->where(['user_id'=>$id])->one();
     }
 
 }

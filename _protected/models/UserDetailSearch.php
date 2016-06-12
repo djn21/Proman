@@ -19,7 +19,7 @@ use app\models\UserDetail;
     {
         return [
             [['id'], 'integer'],
-            [['first_name', 'last_name', 'phone', 'role', 'note', 'image'], 'safe'],
+            [['first_name', 'last_name', 'phone', 'role', 'image'], 'safe'],
         ];
     }
 

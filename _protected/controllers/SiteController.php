@@ -8,6 +8,7 @@ use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
 use app\models\SignupForm;
 use app\models\ContactForm;
+use app\models\UserDetail;
 use yii\helpers\Html;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -257,12 +258,14 @@ class SiteController extends Controller
         $model = $rna ? new SignupForm(['scenario' => 'rna']) : new SignupForm();
 
         // if validation didn't pass, reload the form to show errors
-        if (!$model->load(Yii::$app->request->post()) || !$model->validate()) {
+        if (!$model->load(Yii::$app->request->post()) || !$model->validate()){
             return $this->render('signup', ['model' => $model]);  
         }
 
         // try to save user data in database, if successful, the user object will be returned
         $user = $model->signup();
+
+        
 
         if (!$user) {
             // display error message to user

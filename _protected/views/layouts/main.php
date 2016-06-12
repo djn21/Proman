@@ -45,8 +45,21 @@
 					  		<!-- Messages: style can be found in dropdown.less-->
 					  		<?php
 					  			$baseUrl=Yii::$app->request->BaseUrl;
-					  			$user=UserDetailController::userById(99600);
-					  			$userName=$user['first_name'] . " " . $user['last_name'];
+					  			if(!Yii::$app->user->isGuest){
+					  				//don't have user detail
+						  			if(($user=UserDetailController::userDetailByUserId(Yii::$app->user->id))==null){
+						  				$userName=Yii::$app->user->identity->username;
+						  				$userImageUrl=$baseUrl . '/uploads/0.png';
+						  				$userProfile='create';
+						  			//have user detail
+						  			}else{
+						  				$userName=$user['first_name'] . " " . $user['last_name'];
+						  				$userImageUrl=$baseUrl . "/" . $user['image'];
+						  				$userProfile='view?id=' . $user['id'];	
+						  			}
+					  			}else{
+					  				$userName="Guest";
+					  			}
 					  			//$newMessages=MessageController::newMessages($userId);
 					  			//$numberOfNewMessages=count($newMessages);
 					  			$numberOfNewMessages=4;
@@ -105,10 +118,8 @@
 
 		  					<!-- User Account: style can be found in dropdown.less -->
       						<?php
-      							$name="Guest";
+      							$name=$userName;
       							if(!Yii::$app->user->isGuest){
-      								$name=$userName;
-      								$userImageUrl=$baseUrl . "/" . $user['image'];
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
@@ -149,7 +160,7 @@
 	              								echo 
 	              								"<li class='user-footer'>
 	                								<div class='pull-left'>
-	                  									<a href='$baseUrl/user/index' class='btn btn-default btn-flat'>Profile</a>
+	                  									<a href='$baseUrl/user-detail/$userProfile' class='btn btn-default btn-flat'>Profile</a>
 	                								</div>
 	                								<div class='pull-right'>
 	                  									<a href='$baseUrl/logout' class='btn btn-default btn-flat'>Logout</a>
@@ -246,6 +257,11 @@
 								"<li>
 							  		<a href='$baseUrl/user/index'>
 										<i class='fa fa-users'></i> <span>Users</span>
+							  		</a>
+								</li>
+								<li>
+							  		<a href='$baseUrl/user-detail/index'>
+										<i class='fa fa-user'></i> <span>Profiles</span>
 							  		</a>
 								</li>";
 							}

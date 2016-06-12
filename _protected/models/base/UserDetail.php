@@ -3,7 +3,6 @@
 namespace app\models\base;
 
 use Yii;
-use mootensai\behaviors\UUIDBehavior;
 
 /**
  * This is the base model class for table "{{%user_detail}}".
@@ -15,22 +14,24 @@ use mootensai\behaviors\UUIDBehavior;
  * @property string $role
  * @property string $note
  * @property string $image
+ * @property integer $user_id
+ *
+ * @property \app\models\User $user
  */
 class UserDetail extends \yii\db\ActiveRecord
 {
 
     use \mootensai\relation\RelationTrait;
-
     public $file;
-
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['first_name', 'last_name', 'phone', 'role', 'file', 'note', 'image'], 'required'],
+            [['first_name', 'last_name', 'phone', 'role', 'note', 'image', 'user_id'], 'required'],
             [['note'], 'string'],
+            [['user_id'], 'integer'],
             [['file'], 'file'],
             [['first_name', 'last_name', 'phone', 'role', 'image'], 'string', 'max' => 255]
         ];
@@ -58,21 +59,16 @@ class UserDetail extends \yii\db\ActiveRecord
             'note' => 'Note',
             'image' => 'Image',
             'file' => 'Image',
+            'user_id' => 'User ID',
         ];
     }
 
-/**
-     * @inheritdoc
-     * @return type mixed
-     */ 
-    public function behaviors()
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUser()
     {
-        return [
-            'uuid' => [
-                'class' => UUIDBehavior::className(),
-                'column' => 'id',
-            ],
-        ];
+        return $this->hasOne(\app\models\User::className(), ['id' => 'user_id']);
     }
 
     /**

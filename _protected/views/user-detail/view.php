@@ -7,15 +7,15 @@ use kartik\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $model app\models\UserDetail */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'User Details', 'url' => ['index']];
+$this->title = $model->first_name . ' ' . $model->last_name;
+$this->params['breadcrumbs'][] = ['label' => 'Profile', 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-detail-view">
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'User Detail'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
             <?=             
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'data-toggle' => 'tooltip',
                     'title' => 'Will open the generated PDF file in a new window'
                 ]
-            )?>                        
+            )?>                     
             <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
             <?= Html::a('Delete', ['delete', 'id' => $model->id], [
                 'class' => 'btn btn-danger',

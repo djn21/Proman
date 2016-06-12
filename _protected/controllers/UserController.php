@@ -57,13 +57,13 @@ class UserController extends AppController
     {
         $user = new User(['scenario' => 'create']);
 
-        if (!$user->load(Yii::$app->request->post())) {
+        if (!$user->load(Yii::$app->request->post())){
             return $this->render('create', ['user' => $user]);
         }
 
         $user->setPassword($user->password);
         $user->generateAuthKey();
-
+        
         if (!$user->save()) {
             return $this->render('create', ['user' => $user]);
         }

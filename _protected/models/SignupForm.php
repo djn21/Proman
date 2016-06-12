@@ -4,6 +4,8 @@ namespace app\models;
 use app\rbac\helpers\RbacHelper;
 use kartik\password\StrengthValidator;
 use yii\base\Model;
+use app\models\UserDetail;
+use yii\web\UploadedFile;
 use Yii;
 
 /**
