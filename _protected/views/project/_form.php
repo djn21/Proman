@@ -25,9 +25,9 @@ use yii\widgets\ActiveForm;
 ]);
 \mootensai\components\JsBlock::widget(['viewFile' => '_script', 'pos'=> \yii\web\View::POS_END, 
     'viewParams' => [
-        'class' => 'ProjectUser', 
-        'relID' => 'project-user', 
-        'value' => \yii\helpers\Json::encode($model->projectUsers),
+        'class' => 'ProjectProfile', 
+        'relID' => 'project-profile', 
+        'value' => \yii\helpers\Json::encode($model->projectProfiles),
         'isNewRecord' => ($model->isNewRecord) ? 1 : 0
     ]
 ]);
@@ -56,7 +56,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'yyyy-M-dd'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -65,7 +65,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'yyyy-M-dd'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -74,19 +74,20 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'yyyy-M-dd'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
     <?= $form->field($model, 'status')->widget(\kartik\widgets\Select2::classname(), [
-        'data' => $status = array("Active" => "Active", "Inactive" => "Inactive"),
-        'options' => ['placeholder' => 'Chose status'],
+        'data' => ['Active' => 'Active', 'Finished' => 'Finished'],
+        'options' => ['placeholder' => 'Choose Status'],
         'pluginOptions' => [
             'allowClear' => true
         ],
     ]) ?>
-
     <?= $form->field($model, 'note')->textarea(['rows' => 6]) ?>
+
+    <div class="form-group" id="add-project-profile"></div>
 
     <div class="form-group" id="add-task"></div>
 

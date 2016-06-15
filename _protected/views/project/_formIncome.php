@@ -45,7 +45,7 @@ echo TabularForm::widget([
     ],
     'gridSettings' => [
         'panel' => [
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Income',
+            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Incomes',
             'type' => GridView::TYPE_INFO,
             'before' => false,
             'footer' => false,

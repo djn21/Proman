@@ -1,0 +1,43 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\DetailView;
+use kartik\grid\GridView;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Profile */
+
+$this->title = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="profile-view">
+
+    <div class="row">
+        <div class="col-sm-9">
+            <h2><?= 'Profile'.' '. Html::encode($this->title) ?></h2>
+        </div>
+    </div>
+
+    <div class="row">
+<?php 
+    $gridColumn = [
+        ['attribute' => 'id', 'hidden' => true],
+        'name',
+        'phone',
+        'role',
+        'note:ntext',
+        'image',
+        [
+                'attribute' => 'user.id',
+                'label' => 'User'
+        ],
+    ];
+    echo DetailView::widget([
+        'model' => $model,
+        'attributes' => $gridColumn
+    ]); 
+?>
+    </div>
+    
+</div>

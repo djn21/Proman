@@ -24,7 +24,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -42,13 +42,13 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
-    <?= $form->field($model, 'status')->widget(\kartik\widgets\Select2::classname(), [
-        'data' => $status = array("Active" => "Active", "Inactive" => "Inactive"),
-        'options' => ['placeholder' => 'Chose status'],
+    <?php  echo $form->field($model, 'status')->widget(\kartik\widgets\Select2::classname(), [
+        'data' => ['Active' => 'Active', 'Finished' => 'Finished'],
+        'options' => ['placeholder' => 'Choose Status'],
         'pluginOptions' => [
             'allowClear' => true
         ],

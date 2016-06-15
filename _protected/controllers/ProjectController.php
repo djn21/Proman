@@ -28,7 +28,7 @@ class ProjectController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-expence', 'add-income', 'add-project-user', 'add-task'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-expence', 'add-income', 'add-project-profile', 'add-task'],
                         'roles' => ['@']
                     ],
                     [
@@ -68,8 +68,8 @@ class ProjectController extends Controller
         $providerIncome = new \yii\data\ArrayDataProvider([
             'allModels' => $model->incomes,
         ]);
-        $providerProjectUser = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->projectUsers,
+        $providerProjectProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectProfiles,
         ]);
         $providerTask = new \yii\data\ArrayDataProvider([
             'allModels' => $model->tasks,
@@ -78,7 +78,7 @@ class ProjectController extends Controller
             'model' => $this->findModel($id),
             'providerExpence' => $providerExpence,
             'providerIncome' => $providerIncome,
-            'providerProjectUser' => $providerProjectUser,
+            'providerProjectProfile' => $providerProjectProfile,
             'providerTask' => $providerTask,
         ]);
     }
@@ -148,8 +148,8 @@ class ProjectController extends Controller
         $providerIncome = new \yii\data\ArrayDataProvider([
             'allModels' => $model->incomes,
         ]);
-        $providerProjectUser = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->projectUsers,
+        $providerProjectProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectProfiles,
         ]);
         $providerTask = new \yii\data\ArrayDataProvider([
             'allModels' => $model->tasks,
@@ -159,7 +159,7 @@ class ProjectController extends Controller
             'model' => $model,
             'providerExpence' => $providerExpence,
             'providerIncome' => $providerIncome,
-            'providerProjectUser' => $providerProjectUser,
+            'providerProjectProfile' => $providerProjectProfile,
             'providerTask' => $providerTask,
         ]);
 
@@ -239,19 +239,19 @@ class ProjectController extends Controller
     
     /**
     * Action to load a tabular form grid
-    * for ProjectUser
+    * for ProjectProfile
     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
     *
     * @return mixed
     */
-    public function actionAddProjectUser()
+    public function actionAddProjectProfile()
     {
         if (Yii::$app->request->isAjax) {
-            $row = Yii::$app->request->post('ProjectUser');
+            $row = Yii::$app->request->post('ProjectProfile');
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
                 $row[] = [];
-            return $this->renderAjax('_formProjectUser', ['row' => $row]);
+            return $this->renderAjax('_formProjectProfile', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

@@ -69,7 +69,7 @@ echo TabularForm::widget([
     ],
     'gridSettings' => [
         'panel' => [
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Task',
+            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Tasks',
             'type' => GridView::TYPE_INFO,
             'before' => false,
             'footer' => false,

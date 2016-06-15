@@ -8,7 +8,7 @@
 	use yii\widgets\Breadcrumbs;
 	use yii\controllers\SiteController;
 	use app\controllers\MessageController;
-	use app\controllers\UserDetailController;
+	use app\controllers\ProfileController;
 
 	AppAsset::register($this);
 ?>
@@ -47,13 +47,13 @@
 					  			$baseUrl=Yii::$app->request->BaseUrl;
 					  			if(!Yii::$app->user->isGuest){
 					  				//don't have user detail
-						  			if(($user=UserDetailController::userDetailByUserId(Yii::$app->user->id))==null){
+						  			if(($user=ProfileController::profileByUserId(Yii::$app->user->id))==null){
 						  				$userName=Yii::$app->user->identity->username;
 						  				$userImageUrl=$baseUrl . '/uploads/0.png';
 						  				$userProfile='create';
 						  			//have user detail
 						  			}else{
-						  				$userName=$user['first_name'] . " " . $user['last_name'];
+						  				$userName=$user['name'];
 						  				$userImageUrl=$baseUrl . "/" . $user['image'];
 						  				$userProfile='view?id=' . $user['id'];	
 						  			}
@@ -160,7 +160,7 @@
 	              								echo 
 	              								"<li class='user-footer'>
 	                								<div class='pull-left'>
-	                  									<a href='$baseUrl/user-detail/$userProfile' class='btn btn-default btn-flat'>Profile</a>
+	                  									<a href='$baseUrl/profile/$userProfile' class='btn btn-default btn-flat'>Profile</a>
 	                								</div>
 	                								<div class='pull-right'>
 	                  									<a href='$baseUrl/logout' class='btn btn-default btn-flat'>Logout</a>
@@ -260,7 +260,7 @@
 							  		</a>
 								</li>
 								<li>
-							  		<a href='$baseUrl/user-detail/index'>
+							  		<a href='$baseUrl/profile/index'>
 										<i class='fa fa-user'></i> <span>Profiles</span>
 							  		</a>
 								</li>";

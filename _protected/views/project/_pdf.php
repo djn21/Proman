@@ -91,26 +91,27 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="row">
 <?php
-    $gridColumnProjectUser = [
+    $gridColumnProjectProfile = [
         ['class' => 'yii\grid\SerialColumn'],
+        ['attribute' => 'id', 'hidden' => true],
         [
                 'attribute' => 'project.name',
                 'label' => 'Project'
         ],
         [
-                'attribute' => 'userDetail.id',
-                'label' => 'User'
+                'attribute' => 'profile.name',
+                'label' => 'Profile'
         ],
     ];
     echo Gridview::widget([
-        'dataProvider' => $providerProjectUser,
+        'dataProvider' => $providerProjectProfile,
         'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-user']],
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-profile']],
         'panel' => [
             'type' => GridView::TYPE_PRIMARY,
-            'heading' => Html::encode('Project User'.' '. $this->title),
+            'heading' => Html::encode('Project Profile'.' '. $this->title),
         ],
-        'columns' => $gridColumnProjectUser
+        'columns' => $gridColumnProjectProfile
     ]);
 ?>
     </div>

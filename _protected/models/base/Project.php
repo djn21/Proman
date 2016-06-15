@@ -3,7 +3,6 @@
 namespace app\models\base;
 
 use Yii;
-use mootensai\behaviors\UUIDBehavior;
 
 /**
  * This is the base model class for table "{{%project}}".
@@ -18,8 +17,7 @@ use mootensai\behaviors\UUIDBehavior;
  *
  * @property \app\models\Expence[] $expences
  * @property \app\models\Income[] $incomes
- * @property \app\models\ProjectUser[] $projectUsers
- * @property \app\models\UserDetail[] $users
+ * @property \app\models\ProjectProfile[] $projectProfiles
  * @property \app\models\Task[] $tasks
  */
 class Project extends \yii\db\ActiveRecord
@@ -83,17 +81,9 @@ class Project extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProjectUsers()
+    public function getProjectProfiles()
     {
-        return $this->hasMany(\app\models\ProjectUser::className(), ['project_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUsers()
-    {
-        return $this->hasMany(\app\models\UserDetail::className(), ['id' => 'user_id'])->viaTable('{{%project_user}}', ['project_id' => 'id']);
+        return $this->hasMany(\app\models\ProjectProfile::className(), ['project_id' => 'id']);
     }
 
     /**
@@ -102,20 +92,6 @@ class Project extends \yii\db\ActiveRecord
     public function getTasks()
     {
         return $this->hasMany(\app\models\Task::className(), ['project_id' => 'id']);
-    }
-
-/**
-     * @inheritdoc
-     * @return type mixed
-     */ 
-    public function behaviors()
-    {
-        return [
-            'uuid' => [
-                'class' => UUIDBehavior::className(),
-                'column' => 'id',
-            ],
-        ];
     }
 
     /**

@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Project'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Project:'.' '. Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
             <?=             
@@ -43,7 +43,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
         'name',
         'start_date',
         'end_date',
@@ -60,88 +59,41 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="row">
 <?php
-if($providerExpence->totalCount){
-    $gridColumnExpence = [
+if($providerProjectProfile->totalCount){
+    $gridColumnProjectProfile = [
         ['class' => 'yii\grid\SerialColumn'],
             ['attribute' => 'id', 'hidden' => true],
-            'description',
-            'amount',
-            'date',
             [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
-    ];
-    echo Gridview::widget([
-        'dataProvider' => $providerExpence,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-expence']],
-        'panel' => [
-        'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Expence'.' '. $this->title),
-        ],
-        'columns' => $gridColumnExpence
-    ]);
-}
-?>
-    </div>
-    
-    <div class="row">
-<?php
-if($providerIncome->totalCount){
-    $gridColumnIncome = [
-        ['class' => 'yii\grid\SerialColumn'],
-            ['attribute' => 'id', 'hidden' => true],
-            'description',
-            'amount',
-            'date',
-            [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
-    ];
-    echo Gridview::widget([
-        'dataProvider' => $providerIncome,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-income']],
-        'panel' => [
-        'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Income'.' '. $this->title),
-        ],
-        'columns' => $gridColumnIncome
-    ]);
-}
-?>
-    </div>
-    
-    <div class="row">
-<?php
-if($providerProjectUser->totalCount){
-    $gridColumnProjectUser = [
-        ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
-            [
-                'attribute' => 'userDetail.id',
+                'attribute' => 'profile.name',
                 'label' => 'User'
         ],
+            [
+                'attribute' => 'profile.role',
+                'label' => 'Role'
+        ],
+        [
+                'attribute' => 'profile.note',
+                'label' => 'Note'
+        ],
+        [
+                'attribute' => 'project.name',
+                'label' => 'Project'
+        ],
     ];
     echo Gridview::widget([
-        'dataProvider' => $providerProjectUser,
+        'dataProvider' => $providerProjectProfile,
         'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-user']],
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-profile']],
         'panel' => [
         'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Project User'.' '. $this->title),
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Users'),
         ],
-        'columns' => $gridColumnProjectUser
+        'columns' => $gridColumnProjectProfile
     ]);
 }
 ?>
     </div>
-    
+
     <div class="row">
 <?php
 if($providerTask->totalCount){
@@ -166,11 +118,68 @@ if($providerTask->totalCount){
         'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-task']],
         'panel' => [
         'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Task'.' '. $this->title),
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Tasks'),
         ],
         'columns' => $gridColumnTask
     ]);
 }
 ?>
     </div>
+
+    <div class="row">
+<?php
+if($providerIncome->totalCount){
+    $gridColumnIncome = [
+        ['class' => 'yii\grid\SerialColumn'],
+            ['attribute' => 'id', 'hidden' => true],
+            'description',
+            'amount',
+            'date',
+            [
+                'attribute' => 'project.name',
+                'label' => 'Project'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerIncome,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-income']],
+        'panel' => [
+        'type' => GridView::TYPE_PRIMARY,
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Incomes'),
+        ],
+        'columns' => $gridColumnIncome
+    ]);
+}
+?>
+    </div>
+
+    <div class="row">
+<?php
+if($providerExpence->totalCount){
+    $gridColumnExpence = [
+        ['class' => 'yii\grid\SerialColumn'],
+            ['attribute' => 'id', 'hidden' => true],
+            'description',
+            'amount',
+            'date',
+            [
+                'attribute' => 'project.name',
+                'label' => 'Project'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerExpence,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-expence']],
+        'panel' => [
+        'type' => GridView::TYPE_PRIMARY,
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Expences'),
+        ],
+        'columns' => $gridColumnExpence
+    ]);
+}
+?>
+    </div>
+    
 </div>

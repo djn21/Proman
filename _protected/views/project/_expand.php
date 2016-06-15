@@ -9,27 +9,33 @@ $items = [
             'model' => $model,
         ]),
     ],
-                        [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Tasks'),
+    [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Users'),
+        'content' => $this->render('_dataProjectProfile', [
+            'model' => $model,
+            'row' => $model->projectProfiles,
+        ]),
+    ],
+    [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Task'),
         'content' => $this->render('_dataTask', [
             'model' => $model,
             'row' => $model->tasks,
         ]),
     ],
-            [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Incomes'),
+    [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Income'),
         'content' => $this->render('_dataIncome', [
             'model' => $model,
             'row' => $model->incomes,
         ]),
     ],
-        [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Expences'),
+    [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Expence'),
         'content' => $this->render('_dataExpence', [
             'model' => $model,
             'row' => $model->expences,
         ]),
-
     ],
     ];
 echo TabsX::widget([
