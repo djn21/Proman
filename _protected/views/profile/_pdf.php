@@ -25,7 +25,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ['attribute' => 'id', 'hidden' => true],
         'name',
         'phone',
-        'role',
         'note:ntext',
         'image',
         [
@@ -39,5 +38,5 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); 
 ?>
     </div>
-    
+
 </div>

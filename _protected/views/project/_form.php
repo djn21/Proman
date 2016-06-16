@@ -85,6 +85,7 @@ use yii\widgets\ActiveForm;
             'allowClear' => true
         ],
     ]) ?>
+
     <?= $form->field($model, 'note')->textarea(['rows' => 6]) ?>
 
     <div class="form-group" id="add-project-profile"></div>

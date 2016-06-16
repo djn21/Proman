@@ -45,8 +45,8 @@ $this->registerJs($search);
         ],
         'name',
         'phone',
-        'role',
         'note:ntext',
+        'image',
         [
             'class' => 'yii\grid\ActionColumn',
         ],

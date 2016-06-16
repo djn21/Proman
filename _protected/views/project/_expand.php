@@ -17,21 +17,21 @@ $items = [
         ]),
     ],
     [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Task'),
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Tasks'),
         'content' => $this->render('_dataTask', [
             'model' => $model,
             'row' => $model->tasks,
         ]),
     ],
     [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Income'),
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Incomes'),
         'content' => $this->render('_dataIncome', [
             'model' => $model,
             'row' => $model->incomes,
         ]),
     ],
     [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Expence'),
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Expences'),
         'content' => $this->render('_dataExpence', [
             'model' => $model,
             'row' => $model->expences,

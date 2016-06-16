@@ -23,15 +23,16 @@ echo TabularForm::widget([
     'attributes' => [
         "id" => ['type' => TabularForm::INPUT_HIDDEN, 'columnOptions'=>['hidden'=>true]],
         'profile_id' => [
-            'label' => 'Name',
+            'label' => 'User',
             'type' => TabularForm::INPUT_WIDGET,
             'widgetClass' => \kartik\widgets\Select2::className(),
             'options' => [
                 'data' => \yii\helpers\ArrayHelper::map(\app\models\Profile::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-                'options' => ['placeholder' => 'Choose Name'],
+                'options' => ['placeholder' => 'Choose User'],
             ],
             'columnOptions' => ['width' => '200px']
         ],
+        'role' => ['type' => TabularForm::INPUT_TEXT],
         'del' => [
             'type' => 'raw',
             'label' => '',

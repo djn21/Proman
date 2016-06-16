@@ -22,7 +22,6 @@ use kartik\grid\GridView;
         ['attribute' => 'id', 'hidden' => true],
         'name',
         'phone',
-        'role',
         'note:ntext',
         'image',
         [

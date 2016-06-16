@@ -19,7 +19,7 @@ use app\models\Profile;
     {
         return [
             [['id', 'user_id'], 'integer'],
-            [['name', 'phone', 'role', 'note', 'image'], 'safe'],
+            [['name', 'phone', 'note', 'image'], 'safe'],
         ];
     }
 
@@ -62,7 +62,6 @@ use app\models\Profile;
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'phone', $this->phone])
-            ->andFilterWhere(['like', 'role', $this->role])
             ->andFilterWhere(['like', 'note', $this->note])
             ->andFilterWhere(['like', 'image', $this->image]);
 

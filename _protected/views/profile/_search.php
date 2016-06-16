@@ -21,11 +21,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true, 'placeholder' => 'Phone']) ?>
 
-    <?= $form->field($model, 'role')->textInput(['maxlength' => true, 'placeholder' => 'Role']) ?>
-
     <?= $form->field($model, 'note')->textarea(['rows' => 6]) ?>
 
-    <?php /* echo $form->field($model, 'image')->textInput(['maxlength' => true, 'placeholder' => 'Image']) */ ?>
+    <?php /*echo $form->field($model, 'image')->textInput(['maxlength' => true, 'placeholder' => 'Image'])*/ ?>
 
     <?php /* echo $form->field($model, 'user_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\User::find()->orderBy('id')->asArray()->all(), 'id', 'id'),

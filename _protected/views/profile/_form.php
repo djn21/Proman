@@ -9,9 +9,9 @@ use yii\widgets\ActiveForm;
 
 \mootensai\components\JsBlock::widget(['viewFile' => '_script', 'pos'=> \yii\web\View::POS_END, 
     'viewParams' => [
-        'class' => 'ProjectUser', 
-        'relID' => 'project-user', 
-        'value' => \yii\helpers\Json::encode($model->projectUsers),
+        'class' => 'ProjectProfile', 
+        'relID' => 'project-profile', 
+        'value' => \yii\helpers\Json::encode($model->projectProfiles),
         'isNewRecord' => ($model->isNewRecord) ? 1 : 0
     ]
 ]);
@@ -28,8 +28,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true, 'placeholder' => 'Phone']) ?>
-
-    <?= $form->field($model, 'role')->textInput(['maxlength' => true, 'placeholder' => 'Role']) ?>
 
     <?= $form->field($model, 'file')->fileInput() ?>
 

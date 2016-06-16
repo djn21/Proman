@@ -10,13 +10,12 @@ use Yii;
  * @property integer $id
  * @property string $name
  * @property string $phone
- * @property string $role
  * @property string $note
  * @property string $image
  * @property integer $user_id
  *
  * @property \app\models\User $user
- * @property \app\models\ProjectProfile[] $projectProfile
+ * @property \app\models\ProjectProfile[] $projectProfiles
  */
 class Profile extends \yii\db\ActiveRecord
 {
@@ -24,18 +23,18 @@ class Profile extends \yii\db\ActiveRecord
     use \mootensai\relation\RelationTrait;
 
     public $file;
-    
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['name', 'phone', 'role', 'note', 'image', 'user_id'], 'required'],
+            [['name', 'phone', 'note', 'image', 'user_id'], 'required'],
             [['note'], 'string'],
             [['user_id'], 'integer'],
             [['file'], 'file'],
-            [['name', 'phone', 'role', 'image'], 'string', 'max' => 255]
+            [['name', 'phone', 'image'], 'string', 'max' => 255]
         ];
     }
     
@@ -56,7 +55,6 @@ class Profile extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'phone' => 'Phone',
-            'role' => 'Role',
             'note' => 'Note',
             'image' => 'Image',
             'file' => 'Image',
@@ -75,7 +73,7 @@ class Profile extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProjectUsers()
+    public function getProjectProfiles()
     {
         return $this->hasMany(\app\models\ProjectProfile::className(), ['profile_id' => 'id']);
     }

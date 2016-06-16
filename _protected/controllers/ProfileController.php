@@ -29,7 +29,7 @@ class ProfileController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-project-user'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-project-profile'],
                         'roles' => ['@']
                     ],
                     [
@@ -63,12 +63,12 @@ class ProfileController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        $providerProjectUser = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->projectUsers,
+        $providerProjectProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectProfiles,
         ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'providerProjectUser' => $providerProjectUser,
+            'providerProjectProfile' => $providerProjectProfile,
         ]);
     }
 
@@ -148,13 +148,13 @@ class ProfileController extends Controller
      */
     public function actionPdf($id) {
         $model = $this->findModel($id);
-        $providerProjectUser = new \yii\data\ArrayDataProvider([
-            'allModels' => $model->projectUsers,
+        $providerProjectProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->projectProfiles,
         ]);
 
         $content = $this->renderAjax('_pdf', [
             'model' => $model,
-            'providerProjectUser' => $providerProjectUser,
+            'providerProjectProfile' => $providerProjectProfile,
         ]);
 
         $pdf = new \kartik\mpdf\Pdf([
@@ -193,26 +193,26 @@ class ProfileController extends Controller
     
     /**
     * Action to load a tabular form grid
-    * for ProjectUser
+    * for ProjectProfile
     * @author Yohanes Candrajaya <moo.tensai@gmail.com>
     * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
     *
     * @return mixed
     */
-    public function actionAddProjectUser()
+    public function actionAddProjectProfile()
     {
         if (Yii::$app->request->isAjax) {
-            $row = Yii::$app->request->post('ProjectUser');
+            $row = Yii::$app->request->post('ProjectProfile');
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
                 $row[] = [];
-            return $this->renderAjax('_formProjectUser', ['row' => $row]);
+            return $this->renderAjax('_formProjectProfile', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
 
-    public function profileByUserId($id){
-        return Profile::find()->where(['user_id'=>$id])->one();
+    public function profileByUserId($userid){
+        return Profile::find()->where(['user_id'=>$userid])->one();
     }
 
 }

@@ -17,8 +17,9 @@ class ProjectProfile extends BaseProjectProfile
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['project_id', 'profile_id'], 'required'],
-            [['project_id', 'profile_id'], 'integer']
+            [['project_id', 'profile_id', 'role'], 'required'],
+            [['project_id', 'profile_id'], 'integer'],
+            [['role'], 'string', 'max' => 255]
         ]);
     }
 	

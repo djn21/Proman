@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); 
 ?>
     </div>
-    
+
     <div class="row">
 <?php
 if($providerProjectProfile->totalCount){
@@ -67,15 +67,8 @@ if($providerProjectProfile->totalCount){
                 'attribute' => 'profile.name',
                 'label' => 'User'
         ],
+            'role',
             [
-                'attribute' => 'profile.role',
-                'label' => 'Role'
-        ],
-        [
-                'attribute' => 'profile.note',
-                'label' => 'Note'
-        ],
-        [
                 'attribute' => 'project.name',
                 'label' => 'Project'
         ],
@@ -153,7 +146,7 @@ if($providerIncome->totalCount){
 }
 ?>
     </div>
-
+    
     <div class="row">
 <?php
 if($providerExpence->totalCount){

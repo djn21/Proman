@@ -10,6 +10,7 @@ use Yii;
  * @property integer $id
  * @property integer $project_id
  * @property integer $profile_id
+ * @property string $role
  *
  * @property \app\models\Profile $profile
  * @property \app\models\Project $project
@@ -25,8 +26,9 @@ class ProjectProfile extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['project_id', 'profile_id'], 'required'],
-            [['project_id', 'profile_id'], 'integer']
+            [['project_id', 'profile_id', 'role'], 'required'],
+            [['project_id', 'profile_id'], 'integer'],
+            [['role'], 'string', 'max' => 255]
         ];
     }
     
@@ -45,8 +47,9 @@ class ProjectProfile extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'project_id' => 'Project ID',
-            'profile_id' => 'Profile ID',
+            'project_id' => 'Project',
+            'profile_id' => 'User',
+            'role' => 'Role',
         ];
     }
 

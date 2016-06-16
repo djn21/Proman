@@ -11,16 +11,9 @@ use yii\data\ArrayDataProvider;
         ['attribute' => 'id', 'hidden' => true],
         [
                 'attribute' => 'profile.name',
-                'label' => 'Name'
+                'label' => 'User'
         ],
-        [
-                'attribute' => 'profile.role',
-                'label' => 'Role'
-        ],
-        [
-                'attribute' => 'profile.note',
-                'label' => 'Note'
-        ],
+        'role',
         [
             'class' => 'yii\grid\ActionColumn',
             'controller' => 'project-profile'

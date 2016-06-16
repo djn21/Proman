@@ -258,8 +258,12 @@
 							  		<a href='$baseUrl/user/index'>
 										<i class='fa fa-users'></i> <span>Users</span>
 							  		</a>
-								</li>
-								<li>
+								</li>";
+								
+							}
+							if (!Yii::$app->user->isGuest) {
+								echo
+								"<li>
 							  		<a href='$baseUrl/profile/index'>
 										<i class='fa fa-user'></i> <span>Profiles</span>
 							  		</a>
