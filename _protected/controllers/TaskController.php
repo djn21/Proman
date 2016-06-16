@@ -28,7 +28,7 @@ class TaskController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-activity'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-activity', 'add-task-profile'],
                         'roles' => ['@']
                     ],
                     [
@@ -65,9 +65,13 @@ class TaskController extends Controller
         $providerActivity = new \yii\data\ArrayDataProvider([
             'allModels' => $model->activities,
         ]);
+        $providerTaskProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->taskProfiles,
+        ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
             'providerActivity' => $providerActivity,
+            'providerTaskProfile' => $providerTaskProfile,
         ]);
     }
 
@@ -133,10 +137,14 @@ class TaskController extends Controller
         $providerActivity = new \yii\data\ArrayDataProvider([
             'allModels' => $model->activities,
         ]);
+        $providerTaskProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->taskProfiles,
+        ]);
 
         $content = $this->renderAjax('_pdf', [
             'model' => $model,
             'providerActivity' => $providerActivity,
+            'providerTaskProfile' => $providerTaskProfile,
         ]);
 
         $pdf = new \kartik\mpdf\Pdf([
@@ -188,6 +196,26 @@ class TaskController extends Controller
             if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
                 $row[] = [];
             return $this->renderAjax('_formActivity', ['row' => $row]);
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
+    * Action to load a tabular form grid
+    * for TaskProfile
+    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+    *
+    * @return mixed
+    */
+    public function actionAddTaskProfile()
+    {
+        if (Yii::$app->request->isAjax) {
+            $row = Yii::$app->request->post('TaskProfile');
+            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
+                $row[] = [];
+            return $this->renderAjax('_formTaskProfile', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

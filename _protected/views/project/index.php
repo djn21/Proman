@@ -58,11 +58,12 @@ $this->registerJs($search);
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'rowOptions' => function($model){
-            if($model->status=='Active'){
+            /*if($model->status=='Active'){
                 return ['class'=>'success'];
             }else{
                 return ['class'=>'danger'];
-            }
+            }*/
+            return null;
         },
         'columns' => $gridColumn,
         'pjax' => true,

@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
     $gridColumn = [
         [
             'attribute' => 'user.username',
-            'label' => 'User',
+            'label' => 'Username',
         ],
         'name',
         'phone',
@@ -58,34 +58,5 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); 
 ?>
     </div>
-    
-    <div class="row">
-<?php
-if($providerProjectProfile->totalCount){
-    $gridColumnProjectProfile = [
-        ['class' => 'yii\grid\SerialColumn'],
-            ['attribute' => 'id', 'hidden' => true],
-            [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
-            [
-                'attribute' => 'profile.name',
-                'label' => 'Profile'
-        ],
-            'role',
-    ];
-    echo Gridview::widget([
-        'dataProvider' => $providerProjectProfile,
-        'pjax' => true,
-        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-project-profile']],
-        'panel' => [
-        'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Project Profile'.' '. $this->title),
-        ],
-        'columns' => $gridColumnProjectProfile
-    ]);
-}
-?>
-    </div>
+
 </div>

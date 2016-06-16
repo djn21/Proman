@@ -34,7 +34,7 @@ echo TabularForm::widget([
     ],
     'gridSettings' => [
         'panel' => [
-            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Activity',
+            'heading' => '<span class="glyphicon glyphicon-book"></span> ' . 'Activities',
             'type' => GridView::TYPE_INFO,
             'before' => false,
             'footer' => false,

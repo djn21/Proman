@@ -10,6 +10,7 @@
 	use app\controllers\MessageController;
 	use app\controllers\ProfileController;
 	use app\controllers\ProjectProfileController;
+	use app\controllers\TaskProfileController;
 
 	AppAsset::register($this);
 ?>
@@ -47,12 +48,12 @@
 					  		<?php
 					  			$baseUrl=Yii::$app->request->BaseUrl;
 					  			if(!Yii::$app->user->isGuest){
-					  				//don't have user detail
+					  				//don't have profile
 						  			if(($user=ProfileController::profileByUserId(Yii::$app->user->id))==null){
 						  				$userName=Yii::$app->user->identity->username;
 						  				$userImageUrl=$baseUrl . '/uploads/0.png';
 						  				$userProfile='create';
-						  			//have user detail
+						  			//have profile
 						  			}else{
 						  				$userName=$user['name'];
 						  				$userImageUrl=$baseUrl . "/" . $user['image'];
@@ -64,6 +65,8 @@
 					  			//$newMessages=MessageController::newMessages($userId);
 					  			//$numberOfNewMessages=count($newMessages);
 					  			$numberOfNewMessages=4;
+					  			$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
+					  			$numberOfTasks=TaskProfileController::numberOfTasksByUserId(Yii::$app->user->id);
 					  			if(!Yii::$app->user->isGuest){
 					  				echo
 							  		"<li class='dropdown messages-menu'>
@@ -119,20 +122,19 @@
 
 		  					<!-- User Account: style can be found in dropdown.less -->
       						<?php
-      							$name=$userName;
       							if(!Yii::$app->user->isGuest){
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
       										<img src=$userImageUrl class='user-image' alt='User Image'>
-      										<span class='hidden-xs'>" . $name . "</span>
+      										<span class='hidden-xs'>" . $userName . "</span>
   						 				</a>";
       							}else{
       								echo
       								"<li class='dropdown user user-menu'>
     									<a href='$baseUrl/login'>
     										<img src='$baseUrl/uploads/0.png' class='user-image' alt='User Image'>
-      										<span class='hidden-xs'>" . $name . "</span>
+      										<span class='hidden-xs'>" . $userName . "</span>
   						 				</a>
   						 			</li>";
       							}
@@ -150,8 +152,10 @@
                 						<p>
                 							<?php
                 								if(!Yii::$app->user->isGuest){
-                 									//echo $name . " - " . $user['role'];
-                 									echo $name . " - Software Developer";
+                 									echo $userName;
+                 									$email=Yii::$app->user->identity->email;
+                 									echo
+                 									"<small> $email </small>";
                  								}
              								?>
                 						</p>
@@ -190,7 +194,7 @@
 	  										<img src='$userImageUrl' class='img-circle' alt='User Image'>
 										</div>
 										<div class='pull-left info'>
-											<p>" . $name . "</p>
+											<p>" . $userName . "</p>
 											<a><i class='fa fa-circle' style='color: green'></i> Online</a>	
 										</div>
 									</div>";
@@ -227,7 +231,6 @@
 						</li>
 						<?php 
 							if(Yii::$app->user->can('employee')){
-								$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
 								echo
 								"<li>
 						  			<a href='$baseUrl/project/index'>
@@ -238,7 +241,7 @@
 								<li>
 						  			<a href='$baseUrl/task/index'>
 										<i class='fa fa-tasks'></i> <span>Tasks</span>
-										<small class='label pull-right bg-yellow'>9</small>
+										<small class='label pull-right bg-yellow'>$numberOfTasks</small>
 						  			</a>
 								</li>
 								<li>

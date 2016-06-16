@@ -61,7 +61,7 @@ $this->registerJs($search);
                 'filterWidgetOptions' => [
                     'pluginOptions' => ['allowClear' => true],
                 ],
-                'filterInputOptions' => ['placeholder' => 'Chose project', 'id' => 'grid-task-search-project_id']
+                'filterInputOptions' => ['placeholder' => 'Proman project', 'id' => 'grid-task-search-project_id']
             ],
         [
             'class' => 'yii\grid\ActionColumn',

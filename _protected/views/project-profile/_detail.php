@@ -26,7 +26,7 @@ use kartik\grid\GridView;
         ],
         [
             'attribute' => 'profile.name',
-            'label' => 'Profile',
+            'label' => 'User',
         ],
         'role',
     ];

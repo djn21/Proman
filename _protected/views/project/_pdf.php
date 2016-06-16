@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Project'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Project:'.' '. Html::encode($this->title) ?></h2>
         </div>
     </div>
 

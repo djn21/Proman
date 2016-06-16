@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Task'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Task:'.' '. Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
             <?=             
@@ -43,7 +43,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
         'name',
         'start_date',
         'end_date',
@@ -60,6 +59,36 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => $gridColumn
     ]); 
+?>
+    </div>
+
+    <div class="row">
+<?php
+if($providerTaskProfile->totalCount){
+    $gridColumnTaskProfile = [
+        ['class' => 'yii\grid\SerialColumn'],
+            ['attribute' => 'id', 'hidden' => true],
+            [
+                'attribute' => 'profile.name',
+                'label' => 'User'
+        ],
+            'role',
+            [
+                'attribute' => 'task.name',
+                'label' => 'Task'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerTaskProfile,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-task-profile']],
+        'panel' => [
+        'type' => GridView::TYPE_PRIMARY,
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Users'),
+        ],
+        'columns' => $gridColumnTaskProfile
+    ]);
+}
 ?>
     </div>
     
@@ -82,11 +111,12 @@ if($providerActivity->totalCount){
         'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-activity']],
         'panel' => [
         'type' => GridView::TYPE_PRIMARY,
-        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Activity'.' '. $this->title),
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Activities'),
         ],
         'columns' => $gridColumnActivity
     ]);
 }
 ?>
     </div>
+
 </div>

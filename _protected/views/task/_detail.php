@@ -19,7 +19,6 @@ use kartik\grid\GridView;
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
         'name',
         'start_date',
         'end_date',

@@ -15,14 +15,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Task'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Task:'.' '. Html::encode($this->title) ?></h2>
         </div>
     </div>
 
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
         'name',
         'start_date',
         'end_date',
@@ -41,12 +40,38 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); 
 ?>
     </div>
+
+    <div class="row">
+<?php
+    $gridColumnTaskProfile = [
+        ['class' => 'yii\grid\SerialColumn'],
+        [
+                'attribute' => 'profile.name',
+                'label' => 'User'
+        ],
+        'role',
+        [
+                'attribute' => 'task.name',
+                'label' => 'Task'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerTaskProfile,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-task-profile']],
+        'panel' => [
+            'type' => GridView::TYPE_PRIMARY,
+            'heading' => Html::encode('Users'),
+        ],
+        'columns' => $gridColumnTaskProfile
+    ]);
+?>
+    </div>
     
     <div class="row">
 <?php
     $gridColumnActivity = [
         ['class' => 'yii\grid\SerialColumn'],
-        ['attribute' => 'id', 'hidden' => true],
         'description',
         'note:ntext',
         [
@@ -60,10 +85,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-activity']],
         'panel' => [
             'type' => GridView::TYPE_PRIMARY,
-            'heading' => Html::encode('Activity'.' '. $this->title),
+            'heading' => Html::encode('Activities'),
         ],
         'columns' => $gridColumnActivity
     ]);
 ?>
     </div>
+
 </div>

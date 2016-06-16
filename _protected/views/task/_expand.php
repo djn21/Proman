@@ -9,6 +9,13 @@ $items = [
             'model' => $model,
         ]),
     ],
+    [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Users'),
+        'content' => $this->render('_dataTaskProfile', [
+            'model' => $model,
+            'row' => $model->taskProfiles,
+        ]),
+    ],
         [
         'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Activities'),
         'content' => $this->render('_dataActivity', [
@@ -16,7 +23,7 @@ $items = [
             'row' => $model->activities,
         ]),
     ],
-        ];
+    ];
 echo TabsX::widget([
     'items' => $items,
     'position' => TabsX::POS_ABOVE,

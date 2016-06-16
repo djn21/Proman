@@ -4,7 +4,7 @@ use kartik\tabs\TabsX;
 use yii\helpers\Url;
 $items = [
     [
-        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('ProjectProfile'),
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Project-User'),
         'content' => $this->render('_detail', [
             'model' => $model,
         ]),

@@ -3,10 +3,9 @@
 namespace app\models\base;
 
 use Yii;
-use mootensai\behaviors\UUIDBehavior;
 
 /**
- * This is the base model class for table "{{%task}}".
+ * This is the base model class for table "proman_task".
  *
  * @property integer $id
  * @property string $name
@@ -20,6 +19,7 @@ use mootensai\behaviors\UUIDBehavior;
  *
  * @property \app\models\Activity[] $activities
  * @property \app\models\Project $project
+ * @property \app\models\TaskProfile[] $taskProfiles
  */
 class Task extends \yii\db\ActiveRecord
 {
@@ -46,7 +46,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return '{{%task}}';
+        return 'proman_task';
     }
 
     /**
@@ -83,18 +83,12 @@ class Task extends \yii\db\ActiveRecord
         return $this->hasOne(\app\models\Project::className(), ['id' => 'project_id']);
     }
 
-/**
-     * @inheritdoc
-     * @return type mixed
-     */ 
-    public function behaviors()
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTaskProfiles()
     {
-        return [
-            'uuid' => [
-                'class' => UUIDBehavior::className(),
-                'column' => 'id',
-            ],
-        ];
+        return $this->hasMany(\app\models\TaskProfile::className(), ['task_id' => 'id']);
     }
 
     /**

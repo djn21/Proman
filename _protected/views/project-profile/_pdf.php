@@ -8,7 +8,7 @@ use kartik\grid\GridView;
 /* @var $model app\models\ProjectProfile */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Project Profiles', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Project-User', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="project-profile-view">
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         [
                 'attribute' => 'profile.name',
-                'label' => 'Profile'
+                'label' => 'User'
         ],
         'role',
     ];
