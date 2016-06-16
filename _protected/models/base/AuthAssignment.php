@@ -1,10 +1,7 @@
 <?php
-
 namespace app\models\base;
-
 use Yii;
 use mootensai\behaviors\UUIDBehavior;
-
 /**
  * This is the base model class for table "{{%auth_assignment}}".
  *
@@ -16,9 +13,7 @@ use mootensai\behaviors\UUIDBehavior;
  */
 class AuthAssignment extends \yii\db\ActiveRecord
 {
-
     use \mootensai\relation\RelationTrait;
-
     /**
      * @inheritdoc
      */
@@ -38,7 +33,6 @@ class AuthAssignment extends \yii\db\ActiveRecord
     {
         return '{{%auth_assignment}}';
     }
-
     /**
      * @inheritdoc
      */
@@ -49,7 +43,6 @@ class AuthAssignment extends \yii\db\ActiveRecord
             'user_id' => 'User ID',
         ];
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -57,7 +50,6 @@ class AuthAssignment extends \yii\db\ActiveRecord
     {
         return $this->hasOne(\app\models\AuthItem::className(), ['name' => 'item_name']);
     }
-
 /**
      * @inheritdoc
      * @return type mixed
@@ -71,7 +63,6 @@ class AuthAssignment extends \yii\db\ActiveRecord
             ],
         ];
     }
-
     /**
      * @inheritdoc
      * @return \app\models\AuthAssignmentQuery the active query used by this AR class.

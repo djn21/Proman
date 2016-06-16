@@ -3,17 +3,17 @@
 namespace app\models\base;
 
 use Yii;
-use mootensai\behaviors\UUIDBehavior;
 
 /**
  * This is the base model class for table "{{%activity}}".
  *
  * @property integer $id
- * @property string $description
+ * @property string $name
  * @property string $note
  * @property integer $task_id
  *
  * @property \app\models\Task $task
+ * @property \app\models\ActivityProfile[] $activityProfiles
  */
 class Activity extends \yii\db\ActiveRecord
 {
@@ -26,10 +26,10 @@ class Activity extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'note', 'task_id'], 'required'],
+            [['name', 'note', 'task_id'], 'required'],
             [['note'], 'string'],
             [['task_id'], 'integer'],
-            [['description'], 'string', 'max' => 255]
+            [['name'], 'string', 'max' => 255]
         ];
     }
     
@@ -48,7 +48,7 @@ class Activity extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'description' => 'Description',
+            'name' => 'Name',
             'note' => 'Note',
             'task_id' => 'Task',
         ];
@@ -62,18 +62,12 @@ class Activity extends \yii\db\ActiveRecord
         return $this->hasOne(\app\models\Task::className(), ['id' => 'task_id']);
     }
 
-/**
-     * @inheritdoc
-     * @return type mixed
-     */ 
-    public function behaviors()
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getActivityProfiles()
     {
-        return [
-            'uuid' => [
-                'class' => UUIDBehavior::className(),
-                'column' => 'id',
-            ],
-        ];
+        return $this->hasMany(\app\models\ActivityProfile::className(), ['activity_id' => 'id']);
     }
 
     /**

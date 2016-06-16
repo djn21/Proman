@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Activity */
 
-$this->title = $model->id;
+$this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Activities', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Activity'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Activity:'.' '. Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
             <?=             
@@ -43,8 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
-        'description',
+        'name',
         'note:ntext',
         [
             'attribute' => 'task.name',
@@ -55,6 +54,36 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => $gridColumn
     ]); 
+?>
+    </div>
+    
+    <div class="row">
+<?php
+if($providerActivityProfile->totalCount){
+    $gridColumnActivityProfile = [
+        ['class' => 'yii\grid\SerialColumn'],
+            ['attribute' => 'id', 'hidden' => true],
+            [
+                'attribute' => 'profile.name',
+                'label' => 'User'
+        ],
+            'time',
+            [
+                'attribute' => 'activity.name',
+                'label' => 'Activity'
+        ],
+    ];
+    echo Gridview::widget([
+        'dataProvider' => $providerActivityProfile,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-proman-activity-profile']],
+        'panel' => [
+        'type' => GridView::TYPE_PRIMARY,
+        'heading' => '<span class="glyphicon glyphicon-book"></span> ' . Html::encode('Users'),
+        ],
+        'columns' => $gridColumnActivityProfile
+    ]);
+}
 ?>
     </div>
 </div>

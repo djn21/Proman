@@ -19,7 +19,7 @@ use app\models\Activity;
     {
         return [
             [['id', 'task_id'], 'integer'],
-            [['description', 'note'], 'safe'],
+            [['name', 'note'], 'safe'],
         ];
     }
 
@@ -60,7 +60,7 @@ use app\models\Activity;
             'task_id' => $this->task_id,
         ]);
 
-        $query->andFilterWhere(['like', 'description', $this->description])
+        $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'note', $this->note]);
 
         return $dataProvider;

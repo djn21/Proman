@@ -43,7 +43,7 @@ $this->registerJs($search);
             'expandOneOnly' => true
         ],
         ['attribute' => 'id', 'hidden' => true],
-        'description',
+        'name',
         'note:ntext',
         [
                 'attribute' => 'task_id',
@@ -56,7 +56,7 @@ $this->registerJs($search);
                 'filterWidgetOptions' => [
                     'pluginOptions' => ['allowClear' => true],
                 ],
-                'filterInputOptions' => ['placeholder' => 'Chose task', 'id' => 'grid-activity-search-task_id']
+                'filterInputOptions' => ['placeholder' => 'Choose Task', 'id' => 'grid-activity-search-task_id']
             ],
         [
             'class' => 'yii\grid\ActionColumn',

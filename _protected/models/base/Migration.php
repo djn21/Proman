@@ -1,10 +1,7 @@
 <?php
-
 namespace app\models\base;
-
 use Yii;
 use mootensai\behaviors\UUIDBehavior;
-
 /**
  * This is the base model class for table "{{%migration}}".
  *
@@ -13,9 +10,7 @@ use mootensai\behaviors\UUIDBehavior;
  */
 class Migration extends \yii\db\ActiveRecord
 {
-
     use \mootensai\relation\RelationTrait;
-
     /**
      * @inheritdoc
      */
@@ -35,7 +30,6 @@ class Migration extends \yii\db\ActiveRecord
     {
         return '{{%migration}}';
     }
-
     /**
      * @inheritdoc
      */
@@ -46,7 +40,6 @@ class Migration extends \yii\db\ActiveRecord
             'apply_time' => 'Apply Time',
         ];
     }
-
 /**
      * @inheritdoc
      * @return type mixed
@@ -60,7 +53,6 @@ class Migration extends \yii\db\ActiveRecord
             ],
         ];
     }
-
     /**
      * @inheritdoc
      * @return \app\models\MigrationQuery the active query used by this AR class.

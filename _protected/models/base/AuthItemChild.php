@@ -1,10 +1,7 @@
 <?php
-
 namespace app\models\base;
-
 use Yii;
 use mootensai\behaviors\UUIDBehavior;
-
 /**
  * This is the base model class for table "{{%auth_item_child}}".
  *
@@ -16,9 +13,7 @@ use mootensai\behaviors\UUIDBehavior;
  */
 class AuthItemChild extends \yii\db\ActiveRecord
 {
-
     use \mootensai\relation\RelationTrait;
-
     /**
      * @inheritdoc
      */
@@ -37,7 +32,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
     {
         return '{{%auth_item_child}}';
     }
-
     /**
      * @inheritdoc
      */
@@ -48,7 +42,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
             'child' => 'Child',
         ];
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -56,7 +49,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
     {
         return $this->hasOne(\app\models\AuthItem::className(), ['name' => 'parent']);
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -64,7 +56,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
     {
         return $this->hasOne(\app\models\AuthItem::className(), ['name' => 'child']);
     }
-
 /**
      * @inheritdoc
      * @return type mixed
@@ -78,7 +69,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
             ],
         ];
     }
-
     /**
      * @inheritdoc
      * @return \app\models\AuthItemChildQuery the active query used by this AR class.

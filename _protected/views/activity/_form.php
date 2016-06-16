@@ -7,6 +7,14 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Activity */
 /* @var $form yii\widgets\ActiveForm */
 
+\mootensai\components\JsBlock::widget(['viewFile' => '_script', 'pos'=> \yii\web\View::POS_END, 
+    'viewParams' => [
+        'class' => 'ActivityProfile', 
+        'relID' => 'activity-profile', 
+        'value' => \yii\helpers\Json::encode($model->activityProfiles),
+        'isNewRecord' => ($model->isNewRecord) ? 1 : 0
+    ]
+]);
 ?>
 
 <div class="activity-form">
@@ -15,19 +23,21 @@ use yii\widgets\ActiveForm;
     
     <?= $form->errorSummary($model); ?>
 
+    <?= $form->field($model, 'id', ['template' => '{input}'])->textInput(['style' => 'display:none']); ?>
+
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Name']) ?>
+
+    <?= $form->field($model, 'note')->textarea(['rows' => 6]) ?>
+
     <?= $form->field($model, 'task_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\Task::find()->orderBy('id')->asArray()->all(), 'id', 'name'),
-        'options' => ['placeholder' => 'Chose task'],
+        'options' => ['placeholder' => 'Choose Task'],
         'pluginOptions' => [
             'allowClear' => true
         ],
     ]) ?>
 
-    <?= $form->field($model, 'id', ['template' => '{input}'])->textInput(['style' => 'display:none']); ?>
-
-    <?= $form->field($model, 'description')->textInput(['maxlength' => true, 'placeholder' => 'Description']) ?>
-
-    <?= $form->field($model, 'note')->textarea(['rows' => 6]) ?>
+    <div class="form-group" id="add-activity-profile"></div>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

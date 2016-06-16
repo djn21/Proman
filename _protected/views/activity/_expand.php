@@ -9,6 +9,13 @@ $items = [
             'model' => $model,
         ]),
     ],
+            [
+        'label' => '<i class="glyphicon glyphicon-book"></i> '. Html::encode('Users'),
+        'content' => $this->render('_dataActivityProfile', [
+            'model' => $model,
+            'row' => $model->activityProfiles,
+        ]),
+    ],
     ];
 echo TabsX::widget([
     'items' => $items,

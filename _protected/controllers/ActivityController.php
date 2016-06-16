@@ -28,7 +28,7 @@ class ActivityController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-activity-profile'],
                         'roles' => ['@']
                     ],
                     [
@@ -62,8 +62,12 @@ class ActivityController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
+        $providerActivityProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->activityProfiles,
+        ]);
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'providerActivityProfile' => $providerActivityProfile,
         ]);
     }
 
@@ -126,9 +130,13 @@ class ActivityController extends Controller
      */
     public function actionPdf($id) {
         $model = $this->findModel($id);
+        $providerActivityProfile = new \yii\data\ArrayDataProvider([
+            'allModels' => $model->activityProfiles,
+        ]);
 
         $content = $this->renderAjax('_pdf', [
             'model' => $model,
+            'providerActivityProfile' => $providerActivityProfile,
         ]);
 
         $pdf = new \kartik\mpdf\Pdf([
@@ -160,6 +168,26 @@ class ActivityController extends Controller
     {
         if (($model = Activity::findOne($id)) !== null) {
             return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
+    * Action to load a tabular form grid
+    * for ActivityProfile
+    * @author Yohanes Candrajaya <moo.tensai@gmail.com>
+    * @author Jiwantoro Ndaru <jiwanndaru@gmail.com>
+    *
+    * @return mixed
+    */
+    public function actionAddActivityProfile()
+    {
+        if (Yii::$app->request->isAjax) {
+            $row = Yii::$app->request->post('ActivityProfile');
+            if((Yii::$app->request->post('isNewRecord') && Yii::$app->request->post('action') == 'load' && empty($row)) || Yii::$app->request->post('action') == 'add')
+                $row[] = [];
+            return $this->renderAjax('_formActivityProfile', ['row' => $row]);
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }

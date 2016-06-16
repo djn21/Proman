@@ -1,9 +1,6 @@
 <?php
-
 namespace app\models\base;
-
 use Yii;
-
 /**
  * This is the base model class for table "proman_message".
  *
@@ -17,9 +14,7 @@ use Yii;
  */
 class Message extends \yii\db\ActiveRecord
 {
-
     use \mootensai\relation\RelationTrait;
-
     /**
      * @inheritdoc
      */
@@ -41,7 +36,6 @@ class Message extends \yii\db\ActiveRecord
     {
         return 'proman_message';
     }
-
     /**
      * @inheritdoc
      */
@@ -57,7 +51,6 @@ class Message extends \yii\db\ActiveRecord
             'id_to' => 'Id To',
         ];
     }
-
     /**
      * @inheritdoc
      * @return \app\models\MessageQuery the active query used by this AR class.

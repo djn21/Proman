@@ -12,15 +12,14 @@ use kartik\grid\GridView;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= Html::encode($model->id) ?></h2>
+            <h2><?= Html::encode($model->name) ?></h2>
         </div>
     </div>
 
     <div class="row">
 <?php 
     $gridColumn = [
-        ['attribute' => 'id', 'hidden' => true],
-        'description',
+        'name',
         'note:ntext',
         [
             'attribute' => 'task.name',

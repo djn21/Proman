@@ -11,6 +11,7 @@
 	use app\controllers\ProfileController;
 	use app\controllers\ProjectProfileController;
 	use app\controllers\TaskProfileController;
+	use app\controllers\ActivityProfileController;
 
 	AppAsset::register($this);
 ?>
@@ -67,6 +68,7 @@
 					  			$numberOfNewMessages=4;
 					  			$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
 					  			$numberOfTasks=TaskProfileController::numberOfTasksByUserId(Yii::$app->user->id);
+					  			$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId(Yii::$app->user->id);
 					  			if(!Yii::$app->user->isGuest){
 					  				echo
 							  		"<li class='dropdown messages-menu'>
@@ -212,48 +214,54 @@
 	  				</div>
 	  				<!-- sidebar menu: : style can be found in sidebar.less -->
 	  				<ul class="sidebar-menu">
-						<?php
-							if(!Yii::$app->user->isGuest){
-								echo
-								"<li class='header'>MAIN NAVIGATION</li>
-								<li>
-		  							<a href='#'>
-										<i class='fa fa-dashboard'></i> <span>Dashboard</span>
-		 							</a>
-								</li>";
-							}
-						?>
-						<li>
+	  					<li class='header'>MAIN NAVIGATION </li>
+		  				<li>
 		  					<a href="<?= $baseUrl ?>">
 								<i class="fa fa-home"></i>
 								<span>Home</span>
 		  					</a>
 						</li>
-						<?php 
+						<?php
+							if(!Yii::$app->user->isGuest){
+								echo
+								"<li>
+		  							<a href='#'>
+										<i class='fa fa-dashboard'></i> <span>Dashboard</span>
+		 							</a>
+								</li>";
+							} 
 							if(Yii::$app->user->can('employee')){
 								echo
 								"<li>
 						  			<a href='$baseUrl/project/index'>
 										<i class='fa fa-cubes'></i> <span>Projects</span>
-										<small class='label pull-right bg-blue'>$numberOfProjects</small>
+										<small class='label pull-right bg-yellow'>$numberOfProjects</small>
 						  			</a>
 								</li>
 								<li>
 						  			<a href='$baseUrl/task/index'>
 										<i class='fa fa-tasks'></i> <span>Tasks</span>
-										<small class='label pull-right bg-yellow'>$numberOfTasks</small>
+										<small class='label pull-right bg-red'>$numberOfTasks</small>
 						  			</a>
 								</li>
 								<li>
 						  			<a href='$baseUrl/activity/index'>
 										<i class='fa fa-check-square'></i> <span>Activities</span>
-										<small class='label pull-right bg-red'>7</small>
+										<small class='label pull-right bg-blue'>$numberOfActivities</small>
 						  			</a>
 								</li>
 								<li>
 							  		<a href='#'>
 										<i class='fa fa-envelope'></i> <span>Messages</span>
 										<small class='label pull-right bg-green'>$numberOfNewMessages</small>
+							  		</a>
+								</li>";
+							}
+							if (!Yii::$app->user->isGuest) {
+								echo
+								"<li>
+							  		<a href='$baseUrl/profile/index'>
+										<i class='fa fa-user'></i> <span>Profiles</span>
 							  		</a>
 								</li>";
 							}
@@ -265,14 +273,6 @@
 							  		</a>
 								</li>";
 								
-							}
-							if (!Yii::$app->user->isGuest) {
-								echo
-								"<li>
-							  		<a href='$baseUrl/profile/index'>
-										<i class='fa fa-user'></i> <span>Profiles</span>
-							  		</a>
-								</li>";
 							}
 							if (Yii::$app->user->isGuest) {
 								echo 
