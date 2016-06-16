@@ -164,4 +164,9 @@ class ProjectProfileController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function numberOfProjectsByUserId($userid){
+        return count(ProjectProfile::find()->where(['profile_id' => $userid])->all());
+    }
+
 }

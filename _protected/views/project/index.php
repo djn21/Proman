@@ -57,6 +57,13 @@ $this->registerJs($search);
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions' => function($model){
+            if($model->status=='Active'){
+                return ['class'=>'success'];
+            }else{
+                return ['class'=>'danger'];
+            }
+        },
         'columns' => $gridColumn,
         'pjax' => true,
         'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-project']],

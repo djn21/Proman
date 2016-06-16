@@ -9,6 +9,7 @@
 	use yii\controllers\SiteController;
 	use app\controllers\MessageController;
 	use app\controllers\ProfileController;
+	use app\controllers\ProjectProfileController;
 
 	AppAsset::register($this);
 ?>
@@ -226,11 +227,12 @@
 						</li>
 						<?php 
 							if(Yii::$app->user->can('employee')){
+								$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
 								echo
 								"<li>
 						  			<a href='$baseUrl/project/index'>
 										<i class='fa fa-cubes'></i> <span>Projects</span>
-										<small class='label pull-right bg-blue'>6</small>
+										<small class='label pull-right bg-blue'>$numberOfProjects</small>
 						  			</a>
 								</li>
 								<li>
