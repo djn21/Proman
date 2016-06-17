@@ -18,8 +18,8 @@ use app\models\Message;
     public function rules()
     {
         return [
-            [['id', 'readed', 'id_from', 'id_to'], 'integer'],
-            [['subject', 'content', 'time'], 'safe'],
+            [['id', 'readed'], 'integer'],
+            [['email_to', 'email_from', 'subject', 'content', 'time'], 'safe'],
         ];
     }
 
@@ -59,11 +59,11 @@ use app\models\Message;
             'id' => $this->id,
             'time' => $this->time,
             'readed' => $this->readed,
-            'id_from' => $this->id_from,
-            'id_to' => $this->id_to,
         ]);
 
-        $query->andFilterWhere(['like', 'subject', $this->subject])
+        $query->andFilterWhere(['like', 'email_to', $this->email_to])
+            ->andFilterWhere(['like', 'email_from', $this->email_from])
+            ->andFilterWhere(['like', 'subject', $this->subject])
             ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;

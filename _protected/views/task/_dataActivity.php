@@ -9,7 +9,7 @@ use yii\data\ArrayDataProvider;
     $gridColumns = [
         ['class' => 'yii\grid\SerialColumn'],
         ['attribute' => 'id', 'hidden' => true],
-        'description',
+        'name',
         'note:ntext',
         [
             'class' => 'yii\grid\ActionColumn',

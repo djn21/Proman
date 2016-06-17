@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-sm-9">
-            <h2><?= 'Task:'.' '. Html::encode($this->title) ?></h2>
+            <h2><?= 'Task'.' '. Html::encode($this->title) ?></h2>
         </div>
         <div class="col-sm-3" style="margin-top: 15px">
             <?=             
@@ -98,7 +98,7 @@ if($providerActivity->totalCount){
     $gridColumnActivity = [
         ['class' => 'yii\grid\SerialColumn'],
             ['attribute' => 'id', 'hidden' => true],
-            'description',
+            'name',
             'note:ntext',
             [
                 'attribute' => 'task.name',
@@ -118,5 +118,5 @@ if($providerActivity->totalCount){
 }
 ?>
     </div>
-
+   
 </div>

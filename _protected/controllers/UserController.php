@@ -207,4 +207,11 @@ class UserController extends AppController
 
         return $model;
     }
+
+    public function userIdByEmail($email){
+        $user=User::find()->where(['email'=>$email])->one();
+        $userId=$user['id'];
+        return $userId;
+    }
+
 }

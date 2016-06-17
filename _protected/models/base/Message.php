@@ -1,31 +1,36 @@
 <?php
+
 namespace app\models\base;
+
 use Yii;
+
 /**
- * This is the base model class for table "proman_message".
+ * This is the base model class for table "{{%message}}".
  *
  * @property integer $id
+ * @property string $email_to
+ * @property string $email_from
  * @property string $subject
  * @property string $content
  * @property string $time
  * @property integer $readed
- * @property integer $id_from
- * @property integer $id_to
  */
 class Message extends \yii\db\ActiveRecord
 {
+
     use \mootensai\relation\RelationTrait;
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['subject', 'content', 'id_from', 'id_to'], 'required'],
+            [['email_to', 'email_from', 'subject', 'content'], 'required'],
             [['content'], 'string'],
             [['time'], 'safe'],
-            [['readed', 'id_from', 'id_to'], 'integer'],
-            [['subject'], 'string', 'max' => 255]
+            [['readed'], 'integer'],
+            [['email_to', 'email_from', 'subject'], 'string', 'max' => 255]
         ];
     }
     
@@ -34,8 +39,9 @@ class Message extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'proman_message';
+        return '{{%message}}';
     }
+
     /**
      * @inheritdoc
      */
@@ -43,14 +49,15 @@ class Message extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'email_to' => 'Email To',
+            'email_from' => 'Email From',
             'subject' => 'Subject',
             'content' => 'Content',
             'time' => 'Time',
             'readed' => 'Readed',
-            'id_from' => 'Id From',
-            'id_to' => 'Id To',
         ];
     }
+
     /**
      * @inheritdoc
      * @return \app\models\MessageQuery the active query used by this AR class.

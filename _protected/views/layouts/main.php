@@ -12,6 +12,7 @@
 	use app\controllers\ProjectProfileController;
 	use app\controllers\TaskProfileController;
 	use app\controllers\ActivityProfileController;
+	use app\controllers\UserController;
 
 	AppAsset::register($this);
 ?>
@@ -63,9 +64,8 @@
 					  			}else{
 					  				$userName="Guest";
 					  			}
-					  			//$newMessages=MessageController::newMessages($userId);
-					  			//$numberOfNewMessages=count($newMessages);
-					  			$numberOfNewMessages=4;
+					  			$newMessages=MessageController::newMessages(Yii::$app->user->identity->email);
+					  			$numberOfNewMessages=count($newMessages);
 					  			$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
 					  			$numberOfTasks=TaskProfileController::numberOfTasksByUserId(Yii::$app->user->id);
 					  			$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId(Yii::$app->user->id);
@@ -80,31 +80,32 @@
               								<li class='header'>You have $numberOfNewMessages new messages</li>
               								<li>
 	                							<ul class='menu'>";
-	                								/*foreach ($newMessages as $message) {
-	                									$messageSubject=$message['subject'];
-	                									$messageTime=$message['time'];
-	                									$messageSenderId=$message['id_from'];
-	                									$messageSender=UserDetailController::userById($messageSenderId);
-	                									$senderUserName=$messageSender['first_name'] . " " . $messageSender['last_name'];
-	                									$senderUserImage=$baseUrl . $messageSender['image'];
-		                								echo"
-								                  		<li>
-								                    		<a href='#'>
-								                      			<div class='pull-left'>
-								                        			<img src=$senderUserImage class='img-circle' alt='User Image'>
-								                      			</div>
-								                      			<h4>
-								                        			$senderUserName
-								                        			<small><i class='fa fa-clock-o'></i> $messageTime</small>
-								                      			</h4>
-								                      			<p>$messageSubject</p>
-								                    		</a>
-								                  		</li>";
-								                  	}*/
+			    								foreach($newMessages as $message) {
+			    									$messageSubject=$message['subject'];
+			    									$messageTime=substr($message['time'],2,14);
+			    									$messageSenderId=UserController::userIdByEmail($message['email_from']);
+			    									$messageSender=ProfileController::profileByUserId($messageSenderId);
+			    									$senderUserName=$messageSender['name'];
+			    									$senderUserImage=$baseUrl . '/' . $messageSender['image'];
+			    									$href=$baseUrl . '/message/view?id=' . $message['id'];
+			        								echo"
+							                  		<li>
+							                    		<a href=$href>
+							                      			<div class='pull-left'>
+							                        			<img src=$senderUserImage class='img-circle' alt='User Image'>
+							                      			</div>
+							                      			<h4>
+							                        			$senderUserName
+							                        			<small><i class='fa fa-clock-o'></i> $messageTime</small>
+							                      			</h4>
+							                      			<p>$messageSubject</p>
+							                    		</a>
+							                  		</li>";
+							                  	}
 							                  	echo"
 							                	</ul>
 						                	</li>
-						                	<li class='footer' style='padding: 0px; height: 30px;'><a href='#''>See All Messages</a></li>
+						                	<li class='footer' style='padding: 0px; height: 30px;'><a href='$baseUrl/message/index''>See All Messages</a></li>
 						                </ul>
 					 				</li>
 				  					<li class='dropdown notifications-menu'>
@@ -116,7 +117,7 @@
 			  						<li>
 										<a href='#''>
 				  							<i class='fa fa-flag-o'></i>
-				  							<span class='label label-danger'>9</span>
+				  							<span class='label label-danger'>$numberOfTasks</span>
 										</a>
 									</li>";
 								}
@@ -251,7 +252,7 @@
 						  			</a>
 								</li>
 								<li>
-							  		<a href='#'>
+							  		<a href='$baseUrl/message/index'>
 										<i class='fa fa-envelope'></i> <span>Messages</span>
 										<small class='label pull-right bg-green'>$numberOfNewMessages</small>
 							  		</a>

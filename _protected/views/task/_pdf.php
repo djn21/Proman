@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ['class' => 'yii\grid\SerialColumn'],
         [
                 'attribute' => 'profile.name',
-                'label' => 'User'
+                'label' => 'Profile'
         ],
         'role',
         [
@@ -72,7 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php
     $gridColumnActivity = [
         ['class' => 'yii\grid\SerialColumn'],
-        'description',
+        'name',
         'note:ntext',
         [
                 'attribute' => 'task.name',
