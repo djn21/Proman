@@ -182,8 +182,11 @@ class MessageController extends Controller
     }
 
 
+    public function getMessages($email){
+        return Message::find()->where(['email_to'=>$email])->orderBy(['time' => SORT_DESC])->asArray()->all();
+    }
+
     public function newMessages($email){
         return Message::find()->where(['email_to'=>$email, 'readed'=>0])->orderBy(['time' => SORT_DESC])->asArray()->all();
     }
-
 }

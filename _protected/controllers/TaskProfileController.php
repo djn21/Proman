@@ -165,8 +165,8 @@ class TaskProfileController extends Controller
         }
     }
 
-    public function numberOfTasksByUserId($userid){
-        return count(TaskProfile::find()->where(['profile_id' => $userid])->all());
+    public function tasksByUserId($userid){
+        return TaskProfile::find()->select('task_id')->distinct()->where(['profile_id' => $userid])->all();
     }
 
 }

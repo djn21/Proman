@@ -165,8 +165,9 @@ class ProjectProfileController extends Controller
         }
     }
 
-    public function numberOfProjectsByUserId($userid){
-        return count(ProjectProfile::find()->where(['profile_id' => $userid])->all());
+    public function projectsByUserId($userid){
+        return ProjectProfile::find()->select('project_id')->distinct()->where(['profile_id' => $userid])->all();
     }
+
 
 }

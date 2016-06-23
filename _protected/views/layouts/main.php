@@ -13,6 +13,8 @@
 	use app\controllers\TaskProfileController;
 	use app\controllers\ActivityProfileController;
 	use app\controllers\UserController;
+	use app\controllers\TaskController;
+	use app\controllers\ProjectController;
 
 	AppAsset::register($this);
 ?>
@@ -64,13 +66,12 @@
 					  			}else{
 					  				$userName="Guest";
 					  			}
-					  			$newMessages=MessageController::newMessages(Yii::$app->user->identity->email);
-					  			$numberOfNewMessages=count($newMessages);
-					  			$numberOfProjects=ProjectProfileController::numberOfProjectsByUserId(Yii::$app->user->id);
-					  			$numberOfTasks=TaskProfileController::numberOfTasksByUserId(Yii::$app->user->id);
-					  			$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId(Yii::$app->user->id);
 					  			if(!Yii::$app->user->isGuest){
+					  				$newMessages=MessageController::getMessages(Yii::$app->user->identity->email);
+					  				$numberOfNewMessages=count(MessageController::newMessages(Yii::$app->user->identity->email));
+					  				$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId(Yii::$app->user->id);
 					  				echo
+					  				//messages notification
 							  		"<li class='dropdown messages-menu'>
 										<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
 								  			<i class='fa fa-envelope-o'></i>
@@ -88,6 +89,11 @@
 			    									$senderUserName=$messageSender['name'];
 			    									$senderUserImage=$baseUrl . '/' . $messageSender['image'];
 			    									$href=$baseUrl . '/message/view?id=' . $message['id'];
+			    									if($message['readed']){
+			    										$small="<small><i class='fa fa-clock-o'></i> $messageTime</small>";
+			    									}else{
+			    										$small="<small class='label pull-right bg-green'>new</small>";
+			    									}
 			        								echo"
 							                  		<li>
 							                    		<a href=$href>
@@ -96,30 +102,98 @@
 							                      			</div>
 							                      			<h4>
 							                        			$senderUserName
-							                        			<small><i class='fa fa-clock-o'></i> $messageTime</small>
+							                        			$small
 							                      			</h4>
 							                      			<p>$messageSubject</p>
 							                    		</a>
 							                  		</li>";
 							                  	}
-							                  	echo"
-							                	</ul>
+							                  	echo 
+							                  	"</ul>
 						                	</li>
 						                	<li class='footer' style='padding: 0px; height: 30px;'><a href='$baseUrl/message/index''>See All Messages</a></li>
 						                </ul>
-					 				</li>
-				  					<li class='dropdown notifications-menu'>
-										<a href='#''>
-					 						<i class='fa fa-bell-o'></i>
-					  						<span class='label label-warning'>10</span>
-										</a>
-									</li>
-			  						<li>
-										<a href='#''>
+					 				</li>";
+					 				//notification
+					 				echo "
+					 					<li class='dropdown notifications-menu'>
+								            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+								              <i class='fa fa-bell-o'></i>
+								              <span class='label label-warning'>10</span>
+								            </a>
+								        </li>
+					 				";
+							        //nuber of users active projects
+							        $projects=ProjectProfileController::projectsByUserId($user['id']);
+							        $numberOfProjects=0;
+							        foreach ($projects as $project) {
+							        	$currentProject=ProjectController::findActiveProject($project);
+							        	if($currentProject!=null){
+							        		$numberOfProjects++;
+							        	}
+							        }
+							        //number of users active tasks
+							        $tasks=TaskProfileController::tasksByUserId($user['id']);
+							        $numberOfTasks=0;
+							        foreach ($tasks as $task) {
+							        	$currentTask=TaskController::findActiveTask($task);
+							        	if($currentTask!=null){
+							        		$numberOfTasks++;
+							        	}
+							        }
+							        echo "
+			  						<li class='dropdown tasks-menu'>
+										<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
 				  							<i class='fa fa-flag-o'></i>
 				  							<span class='label label-danger'>$numberOfTasks</span>
 										</a>
-									</li>";
+										<ul class='dropdown-menu'>
+											<li class='header'>You have $numberOfTasks active tasks</li>
+											<li>
+												<ul class='menu'>";
+													//tasks notification
+							                  	
+							                  	foreach ($tasks as $task) {
+							                  		$currentTask=TaskController::findActiveTask($task);
+							                  		$taskName=$currentTask['name'];
+							                  		$taskPercentage=substr($currentTask['percentage'],0,-3);
+							                  		$taskColor='progress-bar-aqua';
+							                  		$today=date('Y-m-d');
+							                  		if($currentTask['start_date']<$today){
+							                  			$taskColor='progress-bar-green';
+							                  		}
+							                  		if($currentTask['end_date']<$today){
+							                  			$taskColor='progress-bar-yellow';
+							                  		}
+							                  		if($currentTask['dead_line']<$today){
+							                  			$taskColor='progress-bar-red';
+							                  		}
+							                  		if($currentTask!=null){
+							                  			$currentTaskId=$currentTask['id'];
+								                  		echo "
+								                  		<li>
+										                	<a href='$baseUrl/task/view?id=$currentTaskId'>
+										                      	<h3>
+										                        	$taskName
+										                        	<small class='pull-right'>$taskPercentage %</small>
+										                     	</h3>
+										                      	<div class='progress xs'>
+										                        	<div class='progress-bar $taskColor' style='width: $taskPercentage%' role='progressbar' aria-valuenow=$taskPercentage aria-valuemin='0' aria-valuemax='100'>
+										                          		<span class='sr-only'>$taskPercentage% Complete</span>
+										                        	</div>
+										                      	</div>
+										                    </a>
+										                </li>";
+									           		}
+							                  	}
+							                  	echo" 
+								            	</ul>
+							           		</li>
+							            	<li class='footer' style='padding: 0px; height: 30px;'>
+						                		<a href='$baseUrl/task/index'>View all tasks</a>
+						            		</li>
+						            	</ul>
+							        </li>";
 								}
 							?>
 

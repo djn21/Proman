@@ -29,7 +29,12 @@ class TaskController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-activity', 'add-task-profile'],
-                        'roles' => ['@']
+                        'roles' => ['admin']
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'pdf'],
+                        'roles' => ['employee']
                     ],
                     [
                         'allow' => false
@@ -220,4 +225,12 @@ class TaskController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+
+    public function findActiveTask($id)
+    {
+        $percent=100.00;
+        return Task::find()->where(['id'=>$id])->andWhere(['<>','percentage', $percent])->one();
+    }
+
 }

@@ -61,7 +61,7 @@ $this->registerJs($search);
                 'filterWidgetOptions' => [
                     'pluginOptions' => ['allowClear' => true],
                 ],
-                'filterInputOptions' => ['placeholder' => 'Proman project', 'id' => 'grid-task-search-project_id']
+                'filterInputOptions' => ['placeholder' => 'Choose Project', 'id' => 'grid-task-search-project_id']
             ],
         [
             'class' => 'yii\grid\ActionColumn',
@@ -71,6 +71,13 @@ $this->registerJs($search);
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions' => function($model){
+            if($model->percentage=='100.00'){
+                return ['class'=>'danger'];
+            }else{
+                return ['class'=>'success'];
+            }
+        },
         'columns' => $gridColumn,
         'pjax' => true,
         'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-task']],

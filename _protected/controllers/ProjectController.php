@@ -281,4 +281,11 @@ class ProjectController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function findActiveProject($id)
+    {
+        $status='Active';
+        return Project::find()->where(['id'=>$id])->andWhere(['status'=>$status])->one();
+    }
+
 }
