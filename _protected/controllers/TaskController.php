@@ -8,6 +8,7 @@ use app\models\TaskSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\controllers\TaskProfileController;
 
 /**
  * TaskController implements the CRUD actions for Task model.
@@ -231,6 +232,33 @@ class TaskController extends Controller
     {
         $percent=100.00;
         return Task::find()->where(['id'=>$id])->andWhere(['<>','percentage', $percent])->one();
+    }
+
+    public function numberOfTasks($userid){
+        $tasks=TaskProfileController::tasksByUserId($userid);
+        $numberOfTasks=0;
+        foreach ($tasks as $task) {
+            $currentTask=TaskController::findActiveTask($task);
+            if($currentTask!=null){
+                $numberOfTasks++;
+            }
+        }
+        return $numberOfTasks;
+    }
+
+    public function taskColor($task){
+        $taskColor='progress-bar-aqua';
+        $today=date('Y-m-d');
+        if($task['start_date']<$today){
+            $taskColor='progress-bar-green';
+        }
+        if($task['end_date']<$today){
+            $taskColor='progress-bar-yellow';
+        }
+        if($task['dead_line']<$today){
+            $taskColor='progress-bar-red';
+        }
+        return $taskColor;
     }
 
 }

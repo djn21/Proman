@@ -8,6 +8,7 @@ use app\models\ProjectSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\controllers\ProjectProfileController;
 
 /**
  * ProjectController implements the CRUD actions for Project model.
@@ -286,6 +287,19 @@ class ProjectController extends Controller
     {
         $status='Active';
         return Project::find()->where(['id'=>$id])->andWhere(['status'=>$status])->one();
+    }
+
+
+    public function numberOfProjects($userid){
+        $projects=ProjectProfileController::projectsByUserId($userid);
+        $numberOfProjects=0;
+        foreach ($projects as $project) {
+            $currentProject=ProjectController::findActiveProject($project);
+            if($currentProject!=null){
+                $numberOfProjects++;
+            }
+        }
+        return $numberOfProjects;
     }
 
 }

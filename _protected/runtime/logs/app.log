@@ -58359,3 +58359,2853 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1466719242.4465
     'REQUEST_TIME' => 1466719242
 ]
+2016-06-24 00:04:22 [31.223.143.217][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.217
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:59
+2016-06-24 00:04:22 [31.223.143.217][1][-][info][application] $_COOKIE = [
+    '_csrf' => '727c5d45ff830a8c69e50e6248ff7c76b6b073bccb7bec9ab1e8eb6c3d91479aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kGYUBixt8V2A_jsEECfwAU_OI6dTFx5d\";}'
+    'PHPSESSID' => 'vvjdde4kp45ecr7442s9lvori0'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=727c5d45ff830a8c69e50e6248ff7c76b6b073bccb7bec9ab1e8eb6c3d91479aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kGYUBixt8V2A_jsEECfwAU_OI6dTFx5d%22%3B%7D; PHPSESSID=vvjdde4kp45ecr7442s9lvori0; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/profile/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.143.217'
+    'REMOTE_PORT' => '17915'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466719462.589
+    'REQUEST_TIME' => 1466719462
+]
+2016-06-24 00:04:24 [31.223.143.217][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.217
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 00:04:24 [31.223.143.217][1][-][info][application] $_COOKIE = [
+    '_csrf' => '727c5d45ff830a8c69e50e6248ff7c76b6b073bccb7bec9ab1e8eb6c3d91479aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kGYUBixt8V2A_jsEECfwAU_OI6dTFx5d\";}'
+    'PHPSESSID' => 'vvjdde4kp45ecr7442s9lvori0'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=727c5d45ff830a8c69e50e6248ff7c76b6b073bccb7bec9ab1e8eb6c3d91479aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kGYUBixt8V2A_jsEECfwAU_OI6dTFx5d%22%3B%7D; PHPSESSID=vvjdde4kp45ecr7442s9lvori0; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.217'
+    'REMOTE_PORT' => '17915'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466719464.5925
+    'REQUEST_TIME' => 1466719464
+]
+2016-06-24 10:49:49 [66.249.93.63][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.249.93.63
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 10:49:49 [66.249.93.63][-][-][info][application] $_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_X_FORWARDED_FOR' => '31.223.143.164'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '66.249.93.63'
+    'REMOTE_PORT' => '53420'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466758189.8596
+    'REQUEST_TIME' => 1466758189
+]
+2016-06-24 10:49:50 [66.249.93.3][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.249.93.3
+2016-06-24 10:49:49 [66.249.93.3][-][-][info][application] $_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_X_FORWARDED_FOR' => '31.223.143.164'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/gii'
+    'REMOTE_ADDR' => '66.249.93.3'
+    'REMOTE_PORT' => '54280'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/gii'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466758189.8852
+    'REQUEST_TIME' => 1466758189
+]
+2016-06-24 10:49:50 [66.249.93.6][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 66.249.93.6
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:167
+2016-06-24 10:49:49 [66.249.93.6][-][-][info][application] $_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,br'
+    'HTTP_CONNECTION' => 'Keep-alive'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon'
+    'HTTP_X_FORWARDED_FOR' => '31.223.143.164'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/login'
+    'REMOTE_ADDR' => '66.249.93.6'
+    'REMOTE_PORT' => '40431'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/login'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466758189.8979
+    'REQUEST_TIME' => 1466758189
+]
+2016-06-24 13:55:14 [31.223.132.77][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:167
+2016-06-24 13:55:14 [31.223.132.77][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ak5f0tsm5i6v9rht92pl8ps583'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ak5f0tsm5i6v9rht92pl8ps583'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/login'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29360'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/login'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769314.7725
+    'REQUEST_TIME' => 1466769314
+]
+2016-06-24 13:55:27 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:59
+2016-06-24 13:55:27 [31.223.132.77][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/login'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29394'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769327.1427
+    'REQUEST_TIME' => 1466769327
+]
+2016-06-24 13:55:35 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:59
+2016-06-24 13:55:35 [31.223.132.77][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/index'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29153'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769335.0792
+    'REQUEST_TIME' => 1466769335
+]
+2016-06-24 13:55:48 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:62
+2016-06-24 13:55:48 [31.223.132.77][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/index'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29112'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769348.1806
+    'REQUEST_TIME' => 1466769348
+]
+2016-06-24 13:55:53 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/UserController.php:34
+2016-06-24 13:55:52 [31.223.132.77][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/user/index'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29112'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/user/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769352.8361
+    'REQUEST_TIME' => 1466769352
+]
+2016-06-24 13:56:10 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:77
+2016-06-24 13:56:10 [31.223.132.77][1][-][info][application] $_GET = [
+    'id' => '12'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/user/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=12'
+    'REDIRECT_QUERY_STRING' => 'id=12'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/view'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29421'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/view?id=12'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769370.1956
+    'REQUEST_TIME' => 1466769370
+]
+2016-06-24 13:56:15 [31.223.132.77][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:148
+2016-06-24 13:56:15 [31.223.132.77][1][-][info][application] $_GET = [
+    'id' => '12'
+]
+
+$_COOKIE = [
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+    'PHPSESSID' => 'ttd5a4k3dukeemjvqh7vo5jsp0'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/~dejand/proman/project/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D; PHPSESSID=ttd5a4k3dukeemjvqh7vo5jsp0; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/view?id=12'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=12'
+    'REDIRECT_QUERY_STRING' => 'id=12'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/pdf'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29598'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/pdf?id=12'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769375.2238
+    'REQUEST_TIME' => 1466769375
+]
+2016-06-24 13:56:21 [31.223.132.77][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 13:56:21 [31.223.132.77][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0s1dtrsa0nbvgvc23i43g694j2'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=0s1dtrsa0nbvgvc23i43g694j2; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/view?id=12'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29636'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769381.3975
+    'REQUEST_TIME' => 1466769381
+]
+2016-06-24 13:56:25 [31.223.132.77][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.132.77
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:100
+2016-06-24 13:56:25 [31.223.132.77][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0s1dtrsa0nbvgvc23i43g694j2'
+    '_csrf' => 'fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0mf46zqpLoHA9QZTAf5l157fB_6EUVwa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr-Latn-BA;q=0.5,sr-Latn;q=0.3'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=0s1dtrsa0nbvgvc23i43g694j2; _csrf=fb754f962fe6916053b727f48739505e642353b8d1303025dd1f04506d601bb8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220mf46zqpLoHA9QZTAf5l157fB_6EUVwa%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/about'
+    'REMOTE_ADDR' => '31.223.132.77'
+    'REMOTE_PORT' => '29636'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/about'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466769385.4341
+    'REQUEST_TIME' => 1466769385
+]
+2016-06-24 21:40:00 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 21:39:59 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47145'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797199.8543
+    'REQUEST_TIME' => 1466797199
+]
+2016-06-24 21:42:33 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:62
+2016-06-24 21:42:33 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47191'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797353.3568
+    'REQUEST_TIME' => 1466797353
+]
+2016-06-24 21:42:36 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:119
+2016-06-24 21:42:35 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '12'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=12'
+    'REDIRECT_QUERY_STRING' => 'id=12'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/update'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47191'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/update?id=12'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797355.9236
+    'REQUEST_TIME' => 1466797355
+]
+2016-06-24 21:42:38 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:397
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:62
+2016-06-24 21:42:38 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/update?id=12'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47191'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797358.2452
+    'REQUEST_TIME' => 1466797358
+]
+2016-06-24 21:50:10 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/MessageController.php:62
+2016-06-24 21:50:10 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/update?id=12'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/message/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47741'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/message/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797810.3223
+    'REQUEST_TIME' => 1466797810
+]
+2016-06-24 21:50:13 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 21:50:12 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/message/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47741'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797812.9908
+    'REQUEST_TIME' => 1466797812
+]
+2016-06-24 21:50:16 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:60
+2016-06-24 21:50:15 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47741'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797815.7221
+    'REQUEST_TIME' => 1466797815
+]
+2016-06-24 21:50:24 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:106
+2016-06-24 21:50:23 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/create'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47175'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/create'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797823.8751
+    'REQUEST_TIME' => 1466797823
+]
+2016-06-24 21:50:25 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:220
+2016-06-24 21:50:25 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'VGJORkx0Rm8FUSIvICZyXBUDOww0FRkFBlp9FQohcC0aOHciLRYxAw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/add-expence'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47175'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/add-expence'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797825.1104
+    'REQUEST_TIME' => 1466797825
+]
+2016-06-24 21:50:25 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:240
+2016-06-24 21:50:25 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'VGJORkx0Rm8FUSIvICZyXBUDOww0FRkFBlp9FQohcC0aOHciLRYxAw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/add-income'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47145'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/add-income'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797825.1956
+    'REQUEST_TIME' => 1466797825
+]
+2016-06-24 21:50:25 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:260
+2016-06-24 21:50:25 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'VGJORkx0Rm8FUSIvICZyXBUDOww0FRkFBlp9FQohcC0aOHciLRYxAw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/add-project-profile'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47098'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/add-project-profile'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797825.2312
+    'REQUEST_TIME' => 1466797825
+]
+2016-06-24 21:50:25 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:280
+2016-06-24 21:50:25 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'VGJORkx0Rm8FUSIvICZyXBUDOww0FRkFBlp9FQohcC0aOHciLRYxAw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/add-task'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47641'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/add-task'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797825.2686
+    'REQUEST_TIME' => 1466797825
+]
+2016-06-24 21:50:48 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:89
+2016-06-24 21:50:48 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '47775626'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/create'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=47775626'
+    'REDIRECT_QUERY_STRING' => 'id=47775626'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/view'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47372'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/view?id=47775626'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797848.0001
+    'REQUEST_TIME' => 1466797848
+]
+2016-06-24 21:50:50 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:390
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:60
+2016-06-24 21:50:50 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/view?id=47775626'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47372'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797850.584
+    'REQUEST_TIME' => 1466797850
+]
+2016-06-24 21:52:50 [31.223.143.164][1][rjeo9jtmrebv1qamg5gh1al754][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tasks' in /home/dejand/www/proman/_protected/views/layouts/main.php:142
+Stack trace:
+#0 /home/dejand/www/proman/_protected/views/layouts/main.php(142): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/home/dejand/ww...', 142, Array)
+#1 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/View.php(325): require('/home/dejand/ww...')
+#2 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/dejand/ww...', Array)
+#3 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/dejand/ww...', Array, Object(app\controllers\ProjectController))
+#4 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="pro...')
+#5 /home/dejand/www/proman/_protected/controllers/ProjectController.php(60): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\ProjectController->actionIndex()
+#7 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('project/index', Array)
+#11 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /home/dejand/www/proman/index.php(12): yii\base\Application->run()
+#13 {main}
+2016-06-24 21:52:50 [31.223.143.164][1][rjeo9jtmrebv1qamg5gh1al754][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/view?id=47775626'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47798'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466797970.4851
+    'REQUEST_TIME' => 1466797970
+]
+2016-06-24 21:54:04 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:383
+    in /home/dejand/www/proman/_protected/controllers/ProjectController.php:60
+2016-06-24 21:54:04 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/view?id=47775626'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/project/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47738'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/project/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798044.1111
+    'REQUEST_TIME' => 1466798044
+]
+2016-06-24 21:54:07 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:383
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:60
+2016-06-24 21:54:07 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47738'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798047.4133
+    'REQUEST_TIME' => 1466798047
+]
+2016-06-24 21:57:31 [31.223.143.164][1][rjeo9jtmrebv1qamg5gh1al754][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method app\controllers\TaskController::taskColor()' in /home/dejand/www/proman/_protected/views/layouts/main.php:146
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-24 21:57:31 [31.223.143.164][1][rjeo9jtmrebv1qamg5gh1al754][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47643'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798251.4211
+    'REQUEST_TIME' => 1466798251
+]
+2016-06-24 21:58:14 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:60
+2016-06-24 21:58:14 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/project/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47293'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798294.2408
+    'REQUEST_TIME' => 1466798294
+]
+2016-06-24 21:59:25 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 21:59:24 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47384'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798364.8379
+    'REQUEST_TIME' => 1466798364
+]
+2016-06-24 21:59:36 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:60
+2016-06-24 21:59:35 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/index'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47891'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/index'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798375.7925
+    'REQUEST_TIME' => 1466798375
+]
+2016-06-24 21:59:39 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:98
+2016-06-24 21:59:39 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/index'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/create'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47891'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/create'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798379.383
+    'REQUEST_TIME' => 1466798379
+]
+2016-06-24 21:59:40 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:204
+2016-06-24 21:59:40 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'by45YUUxZS0.HVUIKWNRHi5PTCs9UDpHPRYKMgNkU28hdAAFJFMSQQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/add-activity'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47891'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/add-activity'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798380.5488
+    'REQUEST_TIME' => 1466798380
+]
+2016-06-24 21:59:40 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:224
+2016-06-24 21:59:40 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/create'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'by45YUUxZS0.HVUIKWNRHi5PTCs9UDpHPRYKMgNkU28hdAAFJFMSQQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/add-task-profile'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47640'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/add-task-profile'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798380.6317
+    'REQUEST_TIME' => 1466798380
+]
+2016-06-24 22:00:39 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:81
+2016-06-24 22:00:39 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '85'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/create'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=85'
+    'REDIRECT_QUERY_STRING' => 'id=85'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/view'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47525'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/view?id=85'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798439.4455
+    'REQUEST_TIME' => 1466798439
+]
+2016-06-24 22:00:53 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:117
+2016-06-24 22:00:53 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '85'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=85'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=85'
+    'REDIRECT_QUERY_STRING' => 'id=85'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/update'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47030'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/update?id=85'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798453.0683
+    'REQUEST_TIME' => 1466798453
+]
+2016-06-24 22:00:54 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:204
+2016-06-24 22:00:54 [31.223.143.164][1][-][info][application] $_POST = [
+    'action' => 'load'
+    'isNewRecord' => '0'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '25'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/update?id=85'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'TDVWTVVXVjEdBjokOQViAg1UIwctNglbHg1lHhMCYHMCb28pNDUhXQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/add-activity'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47030'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/add-activity'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798454.1919
+    'REQUEST_TIME' => 1466798454
+]
+2016-06-24 22:00:54 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:224
+2016-06-24 22:00:54 [31.223.143.164][1][-][info][application] $_POST = [
+    'TaskProfile' => [
+        0 => [
+            'id' => '9'
+            'task_id' => '85'
+            'profile_id' => '1'
+            'role' => 'role'
+        ]
+    ]
+    'action' => 'load'
+    'isNewRecord' => '0'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '160'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_ORIGIN' => 'http://pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/update?id=85'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'TDVWTVVXVjEdBjokOQViAg1UIwctNglbHg1lHhMCYHMCb28pNDUhXQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/add-task-profile'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47508'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/add-task-profile'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798454.2818
+    'REQUEST_TIME' => 1466798454
+]
+2016-06-24 22:01:11 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:81
+2016-06-24 22:01:11 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '85'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/update?id=85'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=85'
+    'REDIRECT_QUERY_STRING' => 'id=85'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/view'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47289'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/view?id=85'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798471.6891
+    'REQUEST_TIME' => 1466798471
+]
+2016-06-24 22:01:22 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/TaskController.php:81
+2016-06-24 22:01:22 [31.223.143.164][1][-][info][application] $_GET = [
+    'id' => '79'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=85'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => 'id=79'
+    'REDIRECT_QUERY_STRING' => 'id=79'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/task/view'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47511'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/task/view?id=79'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798482.0026
+    'REQUEST_TIME' => 1466798482
+]
+2016-06-24 22:08:22 [31.223.143.164][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.164
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:08:22 [31.223.143.164][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.164'
+    'REMOTE_PORT' => '47290'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466798902.7883
+    'REQUEST_TIME' => 1466798902
+]
+2016-06-24 22:51:26 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:373
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:51:26 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59771'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801486.6597
+    'REQUEST_TIME' => 1466801486
+]
+2016-06-24 22:55:22 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:55:22 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59192'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801722.4494
+    'REQUEST_TIME' => 1466801722
+]
+2016-06-24 22:55:27 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:55:27 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59192'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801727.525
+    'REQUEST_TIME' => 1466801727
+]
+2016-06-24 22:55:47 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:55:47 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59503'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801747.1817
+    'REQUEST_TIME' => 1466801747
+]
+2016-06-24 22:55:48 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "uploads/logo.png".' in /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/logo.pn...', Array)
+#1 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dejand/www/proman/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dejand/www/proman/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-06-24 22:55:48 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+2016-06-24 22:55:48 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/uploads/logo.png'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59503'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/uploads/logo.png'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801748.2291
+    'REQUEST_TIME' => 1466801748
+]
+2016-06-24 22:55:55 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:55:55 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59832'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801755.5022
+    'REQUEST_TIME' => 1466801755
+]
+2016-06-24 22:56:00 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "uploads/logo.png".' in /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('uploads/logo.pn...', Array)
+#1 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/dejand/www/proman/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /home/dejand/www/proman/_protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/dejand/www/proman/index.php(12): yii\base\Application->run()
+#2 {main}
+2016-06-24 22:56:01 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+2016-06-24 22:56:00 [31.223.143.28][1][rjeo9jtmrebv1qamg5gh1al754][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_URL' => '/~dejand/proman/uploads/logo.png'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59426'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/uploads/logo.png'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801760.9031
+    'REQUEST_TIME' => 1466801760
+]
+2016-06-24 22:59:56 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 22:59:55 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_REFERER' => 'http://pisio.etfbl.net/~dejand/proman/task/view?id=79'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59321'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466801995.8201
+    'REQUEST_TIME' => 1466801995
+]
+2016-06-24 23:00:27 [31.223.143.28][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 31.223.143.28
+    in /home/dejand/www/proman/_protected/views/layouts/main.php:374
+    in /home/dejand/www/proman/_protected/controllers/SiteController.php:90
+2016-06-24 23:00:27 [31.223.143.28][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'rjeo9jtmrebv1qamg5gh1al754'
+    '_csrf' => '02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q3lilR43AauJxa_jR83SFU6BNZ9dabwl\";}'
+    '_identity' => '29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/dejand/www'
+    'CONTEXT_PREFIX' => '/~dejand'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,sr;q=0.6,hr;q=0.4,bs;q=0.2,ru;q=0.2'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=rjeo9jtmrebv1qamg5gh1al754; _csrf=02557bbc3c75f7dd16bb2d381442e580f416b5b1ad52185bfe64335f99cc098ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q3lilR43AauJxa_jR83SFU6BNZ9dabwl%22%3B%7D; _identity=29e21351563e41ea2c1b41a33926d54ee825a07931696e4ba25e76f39d4698eea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RoLpnL8wuLx1bTsTRWPLoNe6vpog8xX9%22%2C2592000%5D%22%3B%7D'
+    'HTTP_HOST' => 'pisio.etfbl.net'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2774.3 Safari/537.36'
+    'PATH' => '/bin:/usr/bin'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '31.223.143.28'
+    'REMOTE_PORT' => '59591'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_SCHEME' => 'http'
+    'REQUEST_URI' => '/~dejand/proman/'
+    'SCRIPT_FILENAME' => '/home/dejand/www/proman/index.php'
+    'SCRIPT_NAME' => '/~dejand/proman/index.php'
+    'SERVER_ADDR' => '78.28.135.60'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SERVER_NAME' => 'pisio.etfbl.net'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at pisio.etfbl.net Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'PHP_SELF' => '/~dejand/proman/index.php'
+    'REQUEST_TIME_FLOAT' => 1466802027.05
+    'REQUEST_TIME' => 1466802027
+]

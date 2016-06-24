@@ -26,6 +26,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<?= Html::csrfMetaTags() ?>
 		<title><?= Html::encode($this->title) ?></title>
+		<link rel="icon" href='<?= Yii::$app->request->BaseUrl ?>/uploads/logo.png'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 		<?php $this->head() ?>
 	</head>
@@ -124,23 +125,9 @@
 								        </li>
 					 				";
 							        //nuber of users active projects
-							        $projects=ProjectProfileController::projectsByUserId($user['id']);
-							        $numberOfProjects=0;
-							        foreach ($projects as $project) {
-							        	$currentProject=ProjectController::findActiveProject($project);
-							        	if($currentProject!=null){
-							        		$numberOfProjects++;
-							        	}
-							        }
+							        $numberOfProjects=ProjectController::numberOfProjects($user['id']);
 							        //number of users active tasks
-							        $tasks=TaskProfileController::tasksByUserId($user['id']);
-							        $numberOfTasks=0;
-							        foreach ($tasks as $task) {
-							        	$currentTask=TaskController::findActiveTask($task);
-							        	if($currentTask!=null){
-							        		$numberOfTasks++;
-							        	}
-							        }
+							        $numberOfTasks=TaskController::numberOfTasks($user['id']);
 							        echo "
 			  						<li class='dropdown tasks-menu'>
 										<a href='#' class='dropdown-toggle' data-toggle='dropdown'>
@@ -151,23 +138,13 @@
 											<li class='header'>You have $numberOfTasks active tasks</li>
 											<li>
 												<ul class='menu'>";
-													//tasks notification
-							                  	
+												//tasks notification
+							                  	$tasks=TaskProfileController::tasksByUserId($user['id']);
 							                  	foreach ($tasks as $task) {
 							                  		$currentTask=TaskController::findActiveTask($task);
 							                  		$taskName=$currentTask['name'];
 							                  		$taskPercentage=substr($currentTask['percentage'],0,-3);
-							                  		$taskColor='progress-bar-aqua';
-							                  		$today=date('Y-m-d');
-							                  		if($currentTask['start_date']<$today){
-							                  			$taskColor='progress-bar-green';
-							                  		}
-							                  		if($currentTask['end_date']<$today){
-							                  			$taskColor='progress-bar-yellow';
-							                  		}
-							                  		if($currentTask['dead_line']<$today){
-							                  			$taskColor='progress-bar-red';
-							                  		}
+							                  		$taskColor=TaskController::taskColor($currentTask);
 							                  		if($currentTask!=null){
 							                  			$currentTaskId=$currentTask['id'];
 								                  		echo "
