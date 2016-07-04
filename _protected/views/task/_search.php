@@ -24,7 +24,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
@@ -42,23 +42,23 @@ use yii\widgets\ActiveForm;
         'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
         'pluginOptions' => [
             'autoclose' => true,
-            'format' => 'dd-M-yyyy'
+            'format' => 'yyyy-mm-dd'
         ]
     ]); ?>
 
-    <?php /* echo $form->field($model, 'man_hours')->textInput(['maxlength' => true, 'placeholder' => 'Man Hours']) */ ?>
+    <?php  echo $form->field($model, 'man_hours')->textInput(['maxlength' => true, 'placeholder' => 'Man Hours'])  ?>
 
-    <?php /* echo $form->field($model, 'percentage')->textInput(['maxlength' => true, 'placeholder' => 'Percentage']) */ ?>
+    <?php  echo $form->field($model, 'percentage')->textInput(['maxlength' => true, 'placeholder' => 'Percentage']) ?>
 
     <?php /* echo $form->field($model, 'note')->textarea(['rows' => 6]) */ ?>
 
-    <?php /* echo $form->field($model, 'project_id')->widget(\kartik\widgets\Select2::classname(), [
+    <?php  echo $form->field($model, 'project_id')->widget(\kartik\widgets\Select2::classname(), [
         'data' => \yii\helpers\ArrayHelper::map(\app\models\Project::find()->orderBy('id')->asArray()->all(), 'id', 'name'),
-        'options' => ['placeholder' => 'Choose Proman project'],
+        'options' => ['placeholder' => 'Choose Project'],
         'pluginOptions' => [
             'allowClear' => true
         ],
-    ]) */ ?>
+    ])  ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

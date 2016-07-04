@@ -17,17 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-sm-9">
             <h2><?= 'Profile:'.' '. Html::encode($this->title) ?></h2>
         </div>
-        <div class="col-sm-3" style="margin-top: 15px">
-            <?=             
-             Html::a('<i class="fa glyphicon glyphicon-hand-up"></i> ' . 'PDF', 
-                ['pdf', 'id' => $model['id']],
-                [
-                    'class' => 'btn btn-danger',
-                    'target' => '_blank',
-                    'data-toggle' => 'tooltip',
-                    'title' => 'Will open the generated PDF file in a new window'
-                ]
-            )?>                        
+        <div class="col-sm-3" style="margin-top: 15px">                       
             <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
             <?= Html::a('Delete', ['delete', 'id' => $model->id], [
                 'class' => 'btn btn-danger',
@@ -49,8 +39,8 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         'name',
         'phone',
-        'note:ntext',
         'image',
+        'note:ntext',
     ];
     echo DetailView::widget([
         'model' => $model,

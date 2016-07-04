@@ -47,8 +47,8 @@ class ProjectProfile extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'project_id' => 'Project',
-            'profile_id' => 'User',
+            'project_id' => 'Project ID',
+            'profile_id' => 'Profile ID',
             'role' => 'Role',
         ];
     }

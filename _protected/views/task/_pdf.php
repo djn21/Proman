@@ -22,6 +22,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
+        [
+            'attribute' => 'project.name',
+            'label' => 'Project'
+        ],
         'name',
         'start_date',
         'end_date',
@@ -29,10 +33,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'man_hours',
         'percentage',
         'note:ntext',
-        [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
     ];
     echo DetailView::widget([
         'model' => $model,
@@ -50,10 +50,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Profile'
         ],
         'role',
-        [
-                'attribute' => 'task.name',
-                'label' => 'Task'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerTaskProfile,
@@ -74,10 +70,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ['class' => 'yii\grid\SerialColumn'],
         'name',
         'note:ntext',
-        [
-                'attribute' => 'task.name',
-                'label' => 'Task'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerActivity,

@@ -22,12 +22,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
+        [
+            'attribute' => 'task.name',
+            'label' => 'Task'
+        ],
         'name',
         'note:ntext',
-        [
-                'attribute' => 'task.name',
-                'label' => 'Task'
-        ],
     ];
     echo DetailView::widget([
         'model' => $model,
@@ -45,11 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'User'
         ],
         'time',
-        [
-                'attribute' => 'activity.name',
-                'label' => 'Activity'
-        ],
-
     ];
     echo Gridview::widget([
         'dataProvider' => $providerActivityProfile,

@@ -17,7 +17,7 @@ class Task extends BaseTask
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['name', 'start_date', 'end_date', 'dead_line', 'man_hours', 'percentage', 'note', 'project_id'], 'required'],
+            [['name', 'start_date', 'end_date', 'dead_line', 'man_hours', 'percentage', 'project_id'], 'required'],
             [['start_date', 'end_date', 'dead_line'], 'safe'],
             [['man_hours', 'percentage'], 'number'],
             [['note'], 'string'],

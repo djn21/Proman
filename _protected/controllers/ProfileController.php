@@ -29,7 +29,7 @@ class ProfileController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf', 'add-project-profile'],
+                        'actions' => ['view', 'create', 'update', 'delete', 'add-project-profile'],
                         'roles' => ['@']
                     ],
                     [
@@ -91,6 +91,7 @@ class ProfileController extends Controller
             //image path
             $model->image='uploads/' . $imageName . '.' . $model->file->extension;
             $model->save();
+            chmod('uploads/' . $imageName . '.' . $model->file->extension, 0744);
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -112,7 +113,8 @@ class ProfileController extends Controller
             //image name
             $imageName=$model->user_id;
             //upload image
-            if($model->file=UploadedFile::getInstance($model, 'file')!=null){
+            $model->file=UploadedFile::getInstance($model, 'file');
+            if($model->file!=null){
                 $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
                 //image path
                 $model->image='uploads/' . $imageName . '.' . $model->file->extension;
@@ -128,7 +130,7 @@ class ProfileController extends Controller
 
     /**
      * Deletes an existing Profile model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * If deletion is successful, the browser will be redirected to the 'create' page.
      * @param integer $id
      * @return mixed
      */
@@ -136,7 +138,7 @@ class ProfileController extends Controller
     {
         $this->findModel($id)->deleteWithRelated();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['create']);
     }
     
     /**

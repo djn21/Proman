@@ -261,4 +261,26 @@ class TaskController extends Controller
         return $taskColor;
     }
 
+    public function numberOfnotifications($userid){
+        $tasks=TaskProfileController::tasksByUserId($userid);
+        $numberOfNotifications=0;
+        foreach ($tasks as $task) {
+            $currentTask=TaskController::findActiveTask($task);
+            $date1=date_create(date('Y-m-d'));
+            $date2=date_create($currentTask['start_date']);
+            $diff=date_diff($date1,$date2);
+            $diffDays=$diff->format("%R%a");
+            if($diffDays>0 && $diffDays<=5){
+                $numberOfNotifications++;
+            }
+            $date2=date_create($currentTask['dead_line']);
+            $diff=date_diff($date1,$date2);
+            $diffDays=$diff->format("%R%a");
+            if($diffDays>0 && $diffDays<=5){
+                $numberOfNotifications++;
+            }
+        }
+        return $numberOfNotifications;
+    }
+
 }

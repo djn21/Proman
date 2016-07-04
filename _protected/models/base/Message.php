@@ -49,8 +49,8 @@ class Message extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'email_to' => 'Email To',
-            'email_from' => 'Email From',
+            'email_to' => 'Message To',
+            'email_from' => 'Message From',
             'subject' => 'Subject',
             'content' => 'Content',
             'time' => 'Time',

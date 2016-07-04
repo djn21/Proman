@@ -17,7 +17,7 @@ class Profile extends BaseProfile
     {
         return array_replace_recursive(parent::rules(),
 	    [
-            [['name', 'phone', 'note', 'image', 'user_id'], 'required'],
+            [['name', 'phone', 'image', 'user_id'], 'required'],
             [['note'], 'string'],
             [['user_id'], 'integer'],
             [['name', 'phone', 'image'], 'string', 'max' => 255]

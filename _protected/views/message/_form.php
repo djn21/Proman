@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id', ['template' => '{input}'])->textInput(['style' => 'display:none']); ?>
 
-    <?= $form->field($model, 'email_to')->textInput(['maxlength' => true, 'placeholder' => 'Email To']) ?>
+    <?= $form->field($model, 'email_to')->textInput(['maxlength' => true, 'placeholder' => 'Message To']) ?>
 
     <?= $form->field($model, 'subject')->textInput(['maxlength' => true, 'placeholder' => 'Subject']) ?>
 

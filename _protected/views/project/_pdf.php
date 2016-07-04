@@ -45,10 +45,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'User'
         ],
         'role',
-        [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerProjectProfile,
@@ -74,10 +70,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'man_hours',
         'percentage',
         'note:ntext',
-        [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerTask,
@@ -99,10 +91,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'description',
         'amount',
         'date',
-        [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerIncome,
@@ -124,10 +112,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'description',
         'amount',
         'date',
-        [
-                'attribute' => 'project.name',
-                'label' => 'Project'
-        ],
     ];
     echo Gridview::widget([
         'dataProvider' => $providerExpence,

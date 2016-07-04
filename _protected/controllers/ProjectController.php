@@ -283,6 +283,10 @@ class ProjectController extends Controller
         }
     }
 
+    public function projectNameById($projectid){
+        return Project::find()->where(['id'=>$projectid])->one();
+    }
+
     public function findActiveProject($id)
     {
         $status='Active';
@@ -300,6 +304,28 @@ class ProjectController extends Controller
             }
         }
         return $numberOfProjects;
+    }
+
+    public function numberOfnotifications($userid){
+        $projects=ProjectProfileController::projectsByUserId($userid);
+        $numberOfNotifications=0;
+        foreach ($projects as $project) {
+            $currentProject=ProjectController::findActiveProject($project);
+            $date1=date_create(date('Y-m-d'));
+            $date2=date_create($currentProject['start_date']);
+            $diff=date_diff($date1,$date2);
+            $diffDays=$diff->format("%R%a");
+            if($diffDays>0 && $diffDays<=5){
+                $numberOfNotifications++;
+            }
+            $date2=date_create($currentProject['dead_line']);
+            $diff=date_diff($date1,$date2);
+            $diffDays=$diff->format("%R%a");
+            if($diffDays>0 && $diffDays<=5){
+                $numberOfNotifications++;
+            }
+        }
+        return $numberOfNotifications;
     }
 
 }

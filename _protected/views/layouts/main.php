@@ -78,7 +78,7 @@
 								  			<i class='fa fa-envelope-o'></i>
 								  			<span class='label label-success'>$numberOfNewMessages</span>
 										</a>
-										<ul class='dropdown-menu'>
+										<ul class='dropdown-menu' style='width: 300px'>
               								<li class='header'>You have $numberOfNewMessages new messages</li>
               								<li>
 	                							<ul class='menu'>";
@@ -115,13 +115,91 @@
 						                	<li class='footer' style='padding: 0px; height: 30px;'><a href='$baseUrl/message/index''>See All Messages</a></li>
 						                </ul>
 					 				</li>";
-					 				//notification
+					 				//notifications
+					 				$numberOfNotification=TaskController::numberOfnotifications($user['id'])+ProjectController::numberOfnotifications($user['id']);
 					 				echo "
 					 					<li class='dropdown notifications-menu'>
 								            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
 								              <i class='fa fa-bell-o'></i>
-								              <span class='label label-warning'>10</span>
+								              <span class='label label-warning'>$numberOfNotification</span>
 								            </a>
+								            <ul class='dropdown-menu' style='width: 500px'>
+								            	<li class='header'>You have $numberOfNotification notifications</li>
+							              		<li>
+							                		<!-- inner menu: contains the actual data -->
+							                		<ul class='menu'>";
+							                		//project notifications
+							                		$projects=ProjectProfileController::projectsByUserId($user['id']);
+											        foreach ($projects as $project) {
+											            $currentProject=ProjectController::findActiveProject($project);
+											            $date1=date_create(date('Y-m-d'));
+											            $date2=date_create($currentProject['start_date']);
+											            $diff=date_diff($date1,$date2);
+											            $diffDays=$diff->format("%R%a");
+											            $different=$diff->format("%a");
+											            $projectName=$currentProject['name'];
+											            if($diffDays>0 && $diffDays<=5){
+											               $href=$baseUrl . '/project/view?id=' . $currentProject['id'];
+											                echo
+											                "<li>
+										                    	<a href=$href>
+										                      		<i class='fa fa-info-circle text-green'></i> $projectName starts in $different days
+										                    	</a>
+										                  	</li>"; 
+											            }
+											            $date2=date_create($currentProject['dead_line']);
+											            $diff=date_diff($date1,$date2);
+											            $diffDays=$diff->format("%R%a");
+											            $different=$diff->format("%a");
+											            if($diffDays>0 && $diffDays<=5){
+											                $href=$baseUrl . '/project/view?id=' . $currentProject['id'];
+											                echo
+											                "<li>
+										                    	<a href=$href>
+										                      		<i class='fa fa-exclamation-triangle text-yellow'></i> $projectName deadline in $different days
+										                    	</a>
+										                  	</li>";
+											            }
+											        }
+											        //task notifications
+							                		$tasks=TaskProfileController::tasksByUserId($user['id']);
+											        foreach ($tasks as $task) {
+											            $currentTask=TaskController::findActiveTask($task);
+											            $date1=date_create(date('Y-m-d'));
+											            $date2=date_create($currentTask['start_date']);
+											            $diff=date_diff($date1,$date2);
+											            $diffDays=$diff->format("%R%a");
+											            $different=$diff->format("%a");
+											            $taskName=$currentTask['name'];
+											            $projectName=ProjectController::projectNameById($currentTask['project_id'])['name'];
+											            if($diffDays>0 && $diffDays<=5){
+											            	$href=$baseUrl . '/task/view?id=' . $currentTask['id'];
+											                echo
+											                "<li>
+										                    	<a href=$href>
+										                      		<i class='fa fa-info-circle text-green'></i> $taskName ($projectName) starts in $different days
+										                    	</a>
+										                  	</li>";
+											            }
+											            $date2=date_create($currentTask['dead_line']);
+											            $diff=date_diff($date1,$date2);
+											            $diffDays=$diff->format("%R%a");
+											            $different=$diff->format("%a");
+											            if($diffDays>0 && $diffDays<=5){
+											            	$href=$baseUrl . '/task/view?id=' . $currentTask['id'];
+											                echo
+											                "<li>
+										                    	<a href=$href>
+										                      		<i class='fa fa-exclamation-triangle text-yellow'></i> $taskName ($projectName) deadline in $different days
+										                    	</a>
+										                  	</li>";
+									                  	}
+											        }
+								                  		
+								                 	echo 
+							                		"</ul>
+								              	</li>
+								            </ul>
 								        </li>
 					 				";
 							        //nuber of users active projects
@@ -134,7 +212,7 @@
 				  							<i class='fa fa-flag-o'></i>
 				  							<span class='label label-danger'>$numberOfTasks</span>
 										</a>
-										<ul class='dropdown-menu'>
+										<ul class='dropdown-menu' style='width: 400px'>
 											<li class='header'>You have $numberOfTasks active tasks</li>
 											<li>
 												<ul class='menu'>";
@@ -183,14 +261,6 @@
       										<img src=$userImageUrl class='user-image' alt='User Image'>
       										<span class='hidden-xs'>" . $userName . "</span>
   						 				</a>";
-      							}else{
-      								echo
-      								"<li class='dropdown user user-menu'>
-    									<a href='$baseUrl/login'>
-    										<img src='$baseUrl/uploads/0.png' class='user-image' alt='User Image'>
-      										<span class='hidden-xs'>" . $userName . "</span>
-  						 				</a>
-  						 			</li>";
       							}
   							?>		
             					<ul class="dropdown-menu">
@@ -306,14 +376,6 @@
 							  		<a href='$baseUrl/message/index'>
 										<i class='fa fa-envelope'></i> <span>Messages</span>
 										<small class='label pull-right bg-green'>$numberOfNewMessages</small>
-							  		</a>
-								</li>";
-							}
-							if (!Yii::$app->user->isGuest) {
-								echo
-								"<li>
-							  		<a href='$baseUrl/profile/index'>
-										<i class='fa fa-user'></i> <span>Profiles</span>
 							  		</a>
 								</li>";
 							}

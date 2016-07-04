@@ -28,7 +28,7 @@ class MessageController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
+                        'actions' => ['index', 'view', 'create', 'delete'],
                         'roles' => ['@']
                     ],
                     [
