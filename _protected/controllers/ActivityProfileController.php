@@ -29,7 +29,12 @@ class ActivityProfileController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
-                        'roles' => ['@']
+                        'roles' => ['admin']
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'pdf'],
+                        'roles' => ['employee']
                     ],
                     [
                         'allow' => false
@@ -167,6 +172,10 @@ class ActivityProfileController extends Controller
 
     public function numberOfActivitiesByUserId($userid){
         return count(ActivityProfile::find()->where(['profile_id' => $userid])->all());
+    }
+
+    public function activitiesByUserId($userid){
+        return ActivityProfile::find()->where(['profile_id'=>$userid])->all();
     }
 
 

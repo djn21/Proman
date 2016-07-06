@@ -197,4 +197,8 @@ class ActivityController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+    public function activityById($id){
+        return Activity::find()->where(['id'=>$id])->one();
+    }
 }

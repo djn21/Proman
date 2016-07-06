@@ -29,7 +29,12 @@ class ProjectProfileController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
-                        'roles' => ['@']
+                        'roles' => ['admin']
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'pdf'],
+                        'roles' => ['employee']
                     ],
                     [
                         'allow' => false
@@ -169,5 +174,22 @@ class ProjectProfileController extends Controller
         return ProjectProfile::find()->select('project_id')->distinct()->where(['profile_id' => $userid])->all();
     }
 
+    public function projectProfileByUserId($userid){
+        return ProjectProfile::find()->where(['profile_id' => $userid])->all();
+    }
+
+    public function colorOfRole($role){
+        switch ($role) {
+            case 'Manager':
+                return 'red';
+                break;
+            case 'Supervisor':
+                return 'yellow';
+                break;
+            default:
+                return 'green';
+                break;
+        }
+    }
 
 }

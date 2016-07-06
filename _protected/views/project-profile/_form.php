@@ -33,7 +33,14 @@ use yii\widgets\ActiveForm;
         ],
     ]) ?>
 
-    <?= $form->field($model, 'role')->textInput(['maxlength' => true, 'placeholder' => 'Role']) ?>
+    <?= $form->field($model, 'role')->widget(\kartik\widgets\Select2::classname(), [
+        'data' => ['Manager'=>'Manager', 'Supervisor'=>'Supervisor', 'Participient'=>'Participient'],
+        'options' => ['placeholder' => 'Choose Role'],
+        'pluginOptions' => [
+            'allowClear' => true
+        ],
+    ])
+     ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

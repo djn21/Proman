@@ -43,6 +43,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
+        [
+            'attribute' => 'project.name',
+            'label' => 'Project',
+        ],
         'name',
         'start_date',
         'end_date',
@@ -50,10 +54,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'man_hours',
         'percentage',
         'note:ntext',
-        [
-            'attribute' => 'project.name',
-            'label' => 'Project',
-        ],
     ];
     echo DetailView::widget([
         'model' => $model,

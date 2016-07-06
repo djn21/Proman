@@ -70,7 +70,7 @@
 					  			if(!Yii::$app->user->isGuest){
 					  				$newMessages=MessageController::getMessages(Yii::$app->user->identity->email);
 					  				$numberOfNewMessages=count(MessageController::newMessages(Yii::$app->user->identity->email));
-					  				$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId(Yii::$app->user->id);
+					  				$numberOfActivities=ActivityProfileController::numberOfActivitiesByUserId($user['id']);
 					  				echo
 					  				//messages notification
 							  		"<li class='dropdown messages-menu'>
@@ -223,13 +223,14 @@
 							                  		$taskName=$currentTask['name'];
 							                  		$taskPercentage=substr($currentTask['percentage'],0,-3);
 							                  		$taskColor=TaskController::taskColor($currentTask);
+							                  		$projectName=ProjectController::projectNameById($currentTask['project_id'])['name'];
 							                  		if($currentTask!=null){
 							                  			$currentTaskId=$currentTask['id'];
 								                  		echo "
 								                  		<li>
 										                	<a href='$baseUrl/task/view?id=$currentTaskId'>
 										                      	<h3>
-										                        	$taskName
+										                        	$taskName ($projectName)
 										                        	<small class='pull-right'>$taskPercentage %</small>
 										                     	</h3>
 										                      	<div class='progress xs'>
@@ -337,27 +338,21 @@
 	  				<!-- sidebar menu: : style can be found in sidebar.less -->
 	  				<ul class="sidebar-menu">
 	  					<li class='header'>MAIN NAVIGATION </li>
-		  				<li>
-		  					<a href="<?= $baseUrl ?>">
-								<i class="fa fa-home"></i>
-								<span>Home</span>
-		  					</a>
-						</li>
 						<?php
-							if(!Yii::$app->user->isGuest){
-								echo
-								"<li>
-		  							<a href='#'>
-										<i class='fa fa-dashboard'></i> <span>Dashboard</span>
-		 							</a>
-								</li>";
-							} 
+							if(!Yii::$app->user->isGuest)
+							echo
+							"<li>
+			  					<a href=$baseUrl>
+									<i class='fa fa-home'></i>
+									<span>Home</span>
+			  					</a>
+							</li>";
 							if(Yii::$app->user->can('employee')){
 								echo
 								"<li>
 						  			<a href='$baseUrl/project/index'>
 										<i class='fa fa-cubes'></i> <span>Projects</span>
-										<small class='label pull-right bg-yellow'>$numberOfProjects</small>
+										<small class='label pull-right bg-blue'>$numberOfProjects</small>
 						  			</a>
 								</li>
 								<li>
@@ -369,10 +364,14 @@
 								<li>
 						  			<a href='$baseUrl/activity/index'>
 										<i class='fa fa-check-square'></i> <span>Activities</span>
-										<small class='label pull-right bg-blue'>$numberOfActivities</small>
+										<small class='label pull-right bg-aqua'>$numberOfActivities</small>
 						  			</a>
-								</li>
-								<li>
+								</li>";
+								
+							}
+							if(!Yii::$app->user->isGuest){
+								echo
+								"<li>
 							  		<a href='$baseUrl/message/index'>
 										<i class='fa fa-envelope'></i> <span>Messages</span>
 										<small class='label pull-right bg-green'>$numberOfNewMessages</small>

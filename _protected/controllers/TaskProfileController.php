@@ -29,7 +29,12 @@ class TaskProfileController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
-                        'roles' => ['@']
+                        'roles' => ['admin']
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'pdf'],
+                        'roles' => ['employee']
                     ],
                     [
                         'allow' => false
@@ -169,5 +174,30 @@ class TaskProfileController extends Controller
         return TaskProfile::find()->select('task_id')->distinct()->where(['profile_id' => $userid])->all();
     }
 
+    public function taskProfileByUserId($userid){
+        return TaskProfile::find()->where(['profile_id'=>$userid])->all();
+    }
 
+    public function roleColor($role){
+        switch ($role) {
+            case 'Manager':
+                return 'red';
+                break;
+            case 'Supervisor':
+                return 'yellow';
+                break;
+            case 'Planner':
+                return 'green';
+                break;
+            case 'Designer':
+                return 'aqua';
+                break;
+            case 'Programmer':
+                return 'blue';
+                break;
+            default:
+                return 'orange';
+                break;
+        }
+    }
 }

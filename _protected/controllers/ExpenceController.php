@@ -29,7 +29,12 @@ class ExpenceController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'pdf'],
-                        'roles' => ['@']
+                        'roles' => ['admin']
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'pdf'],
+                        'roles' => ['employee']
                     ],
                     [
                         'allow' => false

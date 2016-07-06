@@ -3,8 +3,8 @@
 
 use yii\helpers\Html;
 
-$this->title = Yii::t('app', 'About');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', Yii::$app->name);
+$this->params['breadcrumbs'][] = 'About';
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>

@@ -43,12 +43,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
 <?php 
     $gridColumn = [
-        'name',
-        'note:ntext',
         [
             'attribute' => 'task.name',
             'label' => 'Task',
         ],
+        'name',
+        'note:ntext',
     ];
     echo DetailView::widget([
         'model' => $model,

@@ -64,7 +64,7 @@ use app\models\Project;
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'status', $this->status])
-            ->andFilterWhere(['like', 'note', $this->note]);
+            ->andFilterWhere(['like', 'note', $this->note])->orderBy(['status' => SORT_ASC]);
 
         return $dataProvider;
     }

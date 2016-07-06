@@ -32,7 +32,13 @@ echo TabularForm::widget([
             ],
             'columnOptions' => ['width' => '200px']
         ],
-        'role' => ['type' => TabularForm::INPUT_TEXT],
+        'role' => ['type' => TabularForm::INPUT_WIDGET,
+            'widgetClass' => \kartik\widgets\Select2::className(),
+            'options' => [
+                'data' => ['Manager'=>'Manager', 'Supervisor'=>'Supervisor', 'Planner'=>'Planner', 'Designer'=>'Designer', 'Programmer'=>'Programmer', 'Tester'=>'Tester'],
+                'options' => ['placeholder' => 'Choose Role'],
+            ],
+        ],
         'del' => [
             'type' => 'raw',
             'label' => '',

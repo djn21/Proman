@@ -283,4 +283,8 @@ class TaskController extends Controller
         return $numberOfNotifications;
     }
 
+    public function taskNameById($id){
+        return Task::find()->where(['id'=>$id])->one();
+    }
+
 }
