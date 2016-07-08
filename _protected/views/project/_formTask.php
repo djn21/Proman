@@ -30,7 +30,7 @@ echo TabularForm::widget([
                 'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
                 'pluginOptions' => [
                     'autoclose' => true,
-                    'format' => 'dd-M-yyyy'
+                    'format' => 'yyyy-mm-dd'
                 ]
             ]
         ],
@@ -41,7 +41,7 @@ echo TabularForm::widget([
                 'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
                 'pluginOptions' => [
                     'autoclose' => true,
-                    'format' => 'dd-M-yyyy'
+                    'format' => 'yyyy-mm-dd'
                 ]
             ]
         ],
@@ -52,7 +52,7 @@ echo TabularForm::widget([
                 'type' => \kartik\widgets\DatePicker::TYPE_COMPONENT_APPEND,
                 'pluginOptions' => [
                     'autoclose' => true,
-                    'format' => 'dd-M-yyyy'
+                    'format' => 'yyyy-mm-dd'
                 ]
             ]
         ],

@@ -328,4 +328,13 @@ return array (
       '@kartik/password' => $vendorDir . '/kartik-v/yii2-password',
     ),
   ),
+  'mongosoft/yii2-soap-server' => 
+  array (
+    'name' => 'mongosoft/yii2-soap-server',
+    'version' => '0.1.3.0',
+    'alias' => 
+    array (
+      '@mongosoft/soapserver' => $vendorDir . '/mongosoft/yii2-soap-server',
+    ),
+  ),
 );

@@ -18,6 +18,7 @@ return array(
     'mootensai\\enhancedgii\\' => array($vendorDir . '/mootensai/yii2-enhanced-gii'),
     'mootensai\\components\\' => array($vendorDir . '/mootensai/yii2-optimistic-lock-validator', $vendorDir . '/mootensai/yii2-jsblock'),
     'mootensai\\behaviors\\' => array($vendorDir . '/mootensai/yii2-uuid-behavior'),
+    'mongosoft\\soapserver\\' => array($vendorDir . '/mongosoft/yii2-soap-server'),
     'kartik\\widgets\\' => array($vendorDir . '/kartik-v/yii2-widgets'),
     'kartik\\typeahead\\' => array($vendorDir . '/kartik-v/yii2-widget-typeahead'),
     'kartik\\touchspin\\' => array($vendorDir . '/kartik-v/yii2-widget-touchspin'),
@@ -49,6 +50,8 @@ return array(
     'kartik\\affix\\' => array($vendorDir . '/kartik-v/yii2-widget-affix'),
     'kartik\\' => array($vendorDir . '/kartik-v/strength-meter'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'Wingu\\OctopusCore\\Reflection\\' => array($vendorDir . '/wingu/reflection/src'),
+    'PHP2WSDL\\' => array($vendorDir . '/php2wsdl/php2wsdl/src'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

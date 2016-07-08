@@ -90,7 +90,7 @@ class SiteController extends Controller
     	if(Yii::$app->user->isGuest){
     		return $this->render('about');
     	}
-        return $this->render('index');
+        return $this->render('index');  
     }
 
     /**
